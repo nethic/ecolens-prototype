@@ -1,0 +1,14 @@
+{
+    "development": {
+        "use_env_variable": "DEV_DB_URI",
+        "dialect": "mysql"
+    },
+    "test": {
+        "use_env_variable": "TEST_DB_URI",
+        "dialect": "mysql"
+    },
+    "production": {
+        "use_env_variable": "JAWSDB_URL",
+        "dialect": "mysql"
+    }
+}
