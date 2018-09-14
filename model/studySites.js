@@ -1,22 +1,17 @@
 
 module.exports = function(sequelize, DataTypes) {
-    var speciesList = sequelize.define("speciesList", {
-      speciesID: {
+    var studySites = sequelize.define("studySites", {
+      siteID: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoincrement: true
       },
-      speciesName: {
+      siteName: {
         type: DataTypes.STRING,
         allowNull: false
-      },
-      speciesPresence: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-        defaultValue: false
       }
     });
-    return speciesList;
+    return studySites;
   };
   
