@@ -5,4 +5,8 @@ module.exports = (app) => {
         res.send( { express: 'Connected to server.' } );
     });
 
+    app.get('/auth', (req, res) => {
+        res.send( {message: 'this is the auth path'});
+    });
+
 }
