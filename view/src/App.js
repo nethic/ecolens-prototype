@@ -10,6 +10,8 @@ class App extends Component {
     this.handleUser = this.handleUser.bind(this);
     this.handlePass = this.handlePass.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSignup = this.handleSignup.bind(this);
+    this.callApi = this.callApi.bind(this);
 
 
   }
@@ -21,14 +23,59 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
-  callApi = async (route) => {
-    const response = await fetch(route);
-    const body = await response.json();
+  callApi = async (route, data) => {
+    
+    
+    if (route === '/test') {
+      const response = await fetch(route);
+      const body = await response.json();
 
-    if (response.status !== 200) throw Error(body.message);
+      if (response.status !== 200) throw Error(body.message);
 
-    return body;
+      return body;
+
+    }
+    else if (route ==='/auth/login'){
+      const response = await  fetch(route, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: data
+      })
+      const body = await response.json();
+
+      if (response.status !== 200) throw Error(body.message);
+  
+      return body;
+    }
+    else if (route === '/auth/signup'){
+      const response = await  fetch(route, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: data
+      })
+      const body = await response.json();
+
+      if (response.status !== 200) throw Error(body.message);
+  
+      return body;
+    
+
+    }
+
+   
+
+
   };
+
+ 
+
+  
 
   handleUser(event) {
     this.setState({user: event.target.value});
@@ -40,9 +87,27 @@ class App extends Component {
   }
 
   handleSubmit(event) {
+    var data =JSON.stringify({
+      user: this.state.user,
+      pass: this.state.pass
+    }) 
+
     alert('A name was submitted: ' + this.state.user +' also a password.. opsie: ' + this.state.pass);
-    this.callApi('/auth').then(res => this.setState({authRes : res.message}))
+    this.callApi('/auth/login', data).then(res => this.setState({authRes : res.message}))
     event.preventDefault();
+  }
+
+  handleSignup(event) {
+    
+    var data =JSON.stringify({
+      user: this.state.user,
+      pass: this.state.pass
+    }) 
+
+    alert('A name was submitted: ' + this.state.user +' also a password.. opsie: ' + this.state.pass);
+    this.callApi('/auth/signup', data).then(res => this.setState({authRes : res.message}))
+    event.preventDefault();
+
   }
   
   render() {
@@ -62,6 +127,8 @@ class App extends Component {
             </label>
             <br/>
             <input type="submit" value="Submit" onClick={this.handleSubmit} />
+            <input type="submit" value="Signup" onClick={this.handleSignup} />
+
           </form>
       </div>
       

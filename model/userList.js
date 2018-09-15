@@ -1,13 +1,9 @@
 module.exports = function(sequelize, DataTypes) {
     var userList = sequelize.define("userList", {
-      userID: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoincrement: true
-      },
+      
         userName: {
         type: DataTypes.STRING,
+        foreignKey: true,
         allowNull: false
       },
         passHash: {

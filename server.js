@@ -1,6 +1,7 @@
 
 require('dotenv').config();
 const port = process.env.PORT || 3001;
+const crypt = require('bcrypt');
 const db = require('./model');
 const bparse = require('body-parser');
 const express = require('express');
@@ -10,7 +11,7 @@ app.use(bparse.urlencoded({ extended: true }));
 app.use(bparse.text());
 app.use(bparse.json());
 
-require('./controller/homeController')(app);
+require('./controller/homeController')(app, crypt,db);
 
 let syncOptions = { force: false };
 
