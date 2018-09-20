@@ -1,7 +1,8 @@
 
 require('dotenv').config();
 const port = process.env.PORT || 3001;
-const crypt = require('bcrypt');
+// const crypt = require('bcrypt');
+const crypt = require('argon2');
 const db = require('./model');
 const bparse = require('body-parser');
 const express = require('express');

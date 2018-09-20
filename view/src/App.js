@@ -24,53 +24,49 @@ class App extends Component {
   }
 
   callApi = async (route, data) => {
-    
-    
-    if (route === '/test') {
-      const response = await fetch(route);
-      const body = await response.json();
 
-      if (response.status !== 200) throw Error(body.message);
+    switch (route) {
+      case '/test':
+          var response = await fetch(route);
+          var body = await response.json();
 
-      return body;
+          if (response.status !== 200) throw Error(body.message);
+
+          return body;
+
+
+      case '/auth/login':
+          var responseLog = await  fetch(route, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: data
+          })
+          var bodyLog = await responseLog.json();
+
+          if (responseLog.status !== 200) throw Error(bodyLog.message);
+      
+          return bodyLog;
+
+
+      case '/auth/signup':
+          var responseSign = await  fetch(route, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: data
+          })
+          var bodySign = await responseSign.json();
+
+          if (responseSign.status !== 200) throw Error(bodySign.message);
+      
+          return bodySign;
 
     }
-    else if (route ==='/auth/login'){
-      const response = await  fetch(route, {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: data
-      })
-      const body = await response.json();
-
-      if (response.status !== 200) throw Error(body.message);
-  
-      return body;
-    }
-    else if (route === '/auth/signup'){
-      const response = await  fetch(route, {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: data
-      })
-      const body = await response.json();
-
-      if (response.status !== 200) throw Error(body.message);
-  
-      return body;
-    
-
-    }
-
-   
-
-
   };
 
  
@@ -121,9 +117,9 @@ class App extends Component {
         <p className="App-intro">{this.state.authRes}</p>
         <form>
             <label>
-          <input id="user" value={this.state.value} onChange={this.handleUser} placeholder="username" />
+          <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
           <br/>
-          <input id="pass" value={this.state.value} onChange={this.handlePass} placeholder="password" />
+          <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
             </label>
             <br/>
             <input type="submit" value="Submit" onClick={this.handleSubmit} />

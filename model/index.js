@@ -42,8 +42,8 @@ Object.keys(db).forEach(function(modelName) {
 db.floraFamilyList.hasMany(db.floraSpeciesList, {foreignKey: 'familyID'});
 db.floraSpeciesList.belongsTo(db.floraFamilyList, {foreignKey: 'familyID'});
 
-db.userList.hasMany(db.floraInventory, {foreignKey: 'userName'});
-db.floraInventory.belongsTo(db.userList, {foreignKey: 'userName'});
+db.userList.hasMany(db.floraInventory, {foreignKey: 'userID'});
+db.floraInventory.belongsTo(db.userList, {foreignKey: 'userID'});
 
 db.studySites.hasMany(db.floraInventory, {foreignKey: 'siteID'});
 db.floraInventory.belongsTo(db.studySites, {foreignKey: 'siteID'});
