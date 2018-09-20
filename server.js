@@ -11,6 +11,9 @@ app.use(bparse.text());
 app.use(bparse.json());
 
 require('./controller/homeController')(app);
+require('./controller/projectsController')(app);
+require('./controller/floraInventoryController')(app);
+
 
 let syncOptions = { force: false };
 

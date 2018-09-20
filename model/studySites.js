@@ -5,11 +5,12 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
-        autoincrement: true
+        autoIncrement: true
       },
       siteName: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
       }
     });
     return studySites;
