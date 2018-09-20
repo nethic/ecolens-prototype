@@ -24,3 +24,5 @@ if (process.env.NODE_ENV === "test") {
 db.sequelize.sync(syncOptions).then(function() {
     app.listen(port, () => console.log(`Listening on port ${port}.`));
 });
+
+// TEST
