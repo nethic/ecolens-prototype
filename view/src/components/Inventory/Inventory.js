@@ -1,7 +1,11 @@
 import React from "react";
+import SpeciesFamily from "./SpeciesFamily.js";
 
 class Inventory extends React.Component {
   render() {
+    const families = ["Family1", "Family2", "Family3", "Family4", "Family5"];
+    const speciesSet = ["Species1", "Species2", "Species3", "Species4", "Species5"];
+
     return (
       <div className="Inventory">
         <h1>Inventory</h1>
@@ -20,37 +24,14 @@ class Inventory extends React.Component {
             <div className="col">
             </div>
           </div>
-          <div className="row align-items-start">
+          <div className="row">
             <div className="col">
             </div>
             <div className="col-10">
-              <div className="accordion" id="familyAccordion">
-                <div className="card">
-                  <div className="card-header" id="speciesOne">
-                    <h5 className="mb-0">
-                      <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Species Family #1
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseOne" className="collapse show" aria-labelledby="speciesOne" data-parent="#familyAccordion">
-                    <div className="card-body">
-                      <label for="basic-url">Species</label>
-                      <div class="input-group input-group-lg mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="speciesText1">Species #1</span>
-                        </div>
-                        <div class="input-group-text">
-                          <input type="checkbox" aria-label="Checkbox for following text input"></input>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <SpeciesFamily families={families} speciesSet={speciesSet}/>
             </div>
             <div className="col">
-            </div>
+          </div>
           </div>
         </div>
       </div>

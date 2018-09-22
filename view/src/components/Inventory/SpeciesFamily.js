@@ -1,8 +1,10 @@
 import React from "react";
+import Species from "./Species.js";
 
 class SpeciesFamily extends React.Component {
   render() {
     const families = this.props.families;
+    const speciesSet = this.props.speciesSet;
 
     const familyIDs = families.map((family) => 
       `#${family}`
@@ -18,17 +20,7 @@ class SpeciesFamily extends React.Component {
           </h5>
         </div>
         <div id={family} className="collapse show" aria-labelledby="speciesOne" data-parent="#familyAccordion">
-          <div className="card-body">
-            <label htmlFor="basic-url">Species</label>
-            <div className="input-group input-group-lg mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="speciesText1">Species #1</span>
-              </div>
-              <div className="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"></input>
-              </div>
-            </div>
-          </div>
+          <Species speciesSet={speciesSet} />
         </div>
       </div>
     );
@@ -37,7 +29,7 @@ class SpeciesFamily extends React.Component {
       <div className="accordion" id="familyAccordion">
         {cards};
       </div>
-    );
+    )
   }
 }
 
