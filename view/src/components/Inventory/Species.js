@@ -19,7 +19,7 @@ class Species extends React.Component {
 
     return (
       <div className="card-body">
-        {cardBody};
+        {cardBody}
       </div>
     );
   }

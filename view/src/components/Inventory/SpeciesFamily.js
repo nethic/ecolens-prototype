@@ -15,7 +15,7 @@ class SpeciesFamily extends React.Component {
         <div className="card-header" id="speciesOne">
           <h5 className="mb-0">
             <button className="btn btn-link" type="button" data-toggle="collapse" data-target={familyIDs[index]} aria-expanded="true" aria-controls="collapseOne">
-              {family};
+              {family}
         </button>
           </h5>
         </div>
@@ -27,7 +27,7 @@ class SpeciesFamily extends React.Component {
 
     return (
       <div className="accordion" id="familyAccordion">
-        {cards};
+        {cards}
       </div>
     )
   }
