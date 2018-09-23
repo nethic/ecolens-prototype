@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+ import Header from './components/Header/Header.js';
+//  import Login from './components/Login/Login.js';
+// import Site from './components/Site/Site.js';
+// import Family from './components/Family/Family.js';
+ import Footer from './components/Footer/Footer.js';
+// import SignIn from './pages/SignIn/SignIn.js';
+// import Home from './components/Home/Home.js';
 
 class App extends Component {
   state = {
@@ -25,11 +32,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{this.state.response}</p>
+      <Header />
+      {/* <Login /> */}
+      {/* <Site /> */}
+      {/* <Family /> */}
+       <Footer />
+      {/* <SignIn /> */}
+      {/* <Home /> */}
       </div>
     );
   }
