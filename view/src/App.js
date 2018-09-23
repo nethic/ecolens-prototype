@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-
 import './App.css';
- import Header from './components/Header/Header.js';
-//  import Login from './components/Login/Login.js';
-// import Site from './components/Site/Site.js';
-// import Family from './components/Family/Family.js';
- import Footer from './components/Footer/Footer.js';
+import Header from './components/Header/Header.js';
+// import Login from './components/Login/Login.js';
+import Footer from './components/Footer/Footer.js';
 // import SignIn from './pages/SignIn/SignIn.js';
-// import Home from './components/Home/Home.js';
+// import Home from './pages/Home/Home.js';
 
 class App extends Component {
   state = {
@@ -28,17 +25,15 @@ class App extends Component {
 
     return body;
   };
-  
+
   render() {
     return (
       <div className="App">
-      <Header />
-      {/* <Login /> */}
-      {/* <Site /> */}
-      {/* <Family /> */}
-       <Footer />
-      {/* <SignIn /> */}
-      {/* <Home /> */}
+        <Header />
+        {/* <Login /> */}
+        <Footer />
+        {/* <SignIn /> */}
+        {/* <Home /> */}
       </div>
     );
   }
