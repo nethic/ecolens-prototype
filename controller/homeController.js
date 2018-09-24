@@ -1,3 +1,4 @@
+const token = require('./token');
 
 module.exports = (app, crypt, db) => {
 
@@ -6,6 +7,8 @@ module.exports = (app, crypt, db) => {
         res.send( { express: 'Connected to server.' } );
     });
 
+
+    
     app.get('/auth', (req, res) => {
         res.send( {message: 'this is the auth path'});
     });
@@ -53,7 +56,10 @@ module.exports = (app, crypt, db) => {
                 hash = u.passHash
                 crypt.verify(hash, myPlaintextPassword).then(match => {
                     if (match) {
-                        result.send( {message: user + " has been logged in!!"});
+                            //CREATE TOKEN AND SEND IT HERE...
+                        var ttk = token.sign({user:user})
+
+                        result.send( {token:ttk, message : user+' logged in.', ans : true});
 
                     } else {
                         result.send({message: "incorrect password!!"})
@@ -68,6 +74,14 @@ module.exports = (app, crypt, db) => {
           })
 
 
+    })
+
+    app.post('/token', (req, res)=> {
+        if(token.verify(req.body.token)){
+            res.send({message:"token valid", ans : true})
+        }else{
+            res.send({message:'token invalid', ans : false})
+        }
     })
 
 }

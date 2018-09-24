@@ -5,23 +5,44 @@ import './App.css';
 class App extends Component { 
   constructor(props) {
     super(props);
-    this.state = {user: '', pass:'',response: '', authRes:''};
+    this.state = 
+    {
+      user: '',
+      pass:'',
+      response: '',
+      authRes:'',
+      token:'',
+      isAuth: false
+    };
+
+
+
 
     this.handleUser = this.handleUser.bind(this);
     this.handlePass = this.handlePass.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.callApi = this.callApi.bind(this);
-
-
+    this.saveToken = this.saveToken.bind(this);
   }
 
 
   componentDidMount() {
+    this.saveToken();
+    if(localStorage.getItem('tkkn')){
+      let data =JSON.stringify({
+        token: localStorage.getItem('tkkn')
+      })
+     this.callApi('/token', data).then(res=> this.setState({authRes: res.message, isAuth : res.ans}));
+    }
+    
+    
     this.callApi('/test')
       .then(res => this.setState({ response: res.express }))
       .catch(err => console.log(err));
   }
+
+  
 
   callApi = async (route, data) => {
 
@@ -65,6 +86,22 @@ class App extends Component {
           if (responseSign.status !== 200) throw Error(bodySign.message);
       
           return bodySign;
+      case '/token':
+        var tokenRes = await fetch(route, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: data
+        })
+        var tkbody = await tokenRes.json();
+        
+        if (tokenRes.status !== 200) throw Error(tkbody.message);
+        
+        return tkbody;
+
+          
 
     }
   };
@@ -89,8 +126,19 @@ class App extends Component {
     }) 
 
     alert('A name was submitted: ' + this.state.user +' also a password.. opsie: ' + this.state.pass);
-    this.callApi('/auth/login', data).then(res => this.setState({authRes : res.message}))
+    this.callApi('/auth/login', data).then(res => {
+      let token = res.token
+      localStorage.setItem('tkkn', token);
+      this.setState({token: token, authRes: res.message, isAuth:res.ans});
+    });
     event.preventDefault();
+  }
+
+  saveToken(){
+    if (localStorage.hasOwnProperty('tkkn')){
+      this.setState({token: localStorage.getItem('tkkn')});
+    }
+
   }
 
   handleSignup(event) {
@@ -100,8 +148,10 @@ class App extends Component {
       pass: this.state.pass
     }) 
 
+    
+
     alert('A name was submitted: ' + this.state.user +' also a password.. opsie: ' + this.state.pass);
-    this.callApi('/auth/signup', data).then(res => this.setState({authRes : res.message}))
+    this.callApi('/auth/signup', data).then(res => this.setState({authRes : res.message}));
     event.preventDefault();
 
   }
