@@ -1,19 +1,21 @@
 
 require('dotenv').config();
 const port = process.env.PORT || 3001;
-// const crypt = require('bcrypt');
 const crypt = require('argon2');
 const db = require('./model');
 const bparse = require('body-parser');
 const express = require('express');
 const app = express();
-const token = require('./controller/token');
 
 app.use(bparse.urlencoded({ extended: true }));
 app.use(bparse.text());
 app.use(bparse.json());
 
-require('./controller/homeController')(app, crypt,db);
+require('./controller/authController')(app, crypt,db);
+require('./controller/projectsController')(app);
+require('./controller/floraInventoryController')(app);
+
+
 let syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true

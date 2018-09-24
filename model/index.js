@@ -45,6 +45,7 @@ db.floraSpeciesList.belongsTo(db.floraFamilyList, {foreignKey: 'familyID'});
 db.userList.hasMany(db.floraInventory, {foreignKey: 'userID'});
 db.floraInventory.belongsTo(db.userList, {foreignKey: 'userID'});
 
+
 db.studySites.hasMany(db.floraInventory, {foreignKey: 'siteID'});
 db.floraInventory.belongsTo(db.studySites, {foreignKey: 'siteID'});
 
