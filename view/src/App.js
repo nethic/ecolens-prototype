@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header.js';
+// import Login from './components/Login/Login.js';
+import Footer from './components/Footer/Footer.js';
+// import SignIn from './pages/SignIn/SignIn.js';
+// import Home from './pages/Home/Home.js';
 
 class App extends Component { 
   constructor(props) {
@@ -15,9 +19,6 @@ class App extends Component {
       isAuth: false
     };
 
-
-
-
     this.handleUser = this.handleUser.bind(this);
     this.handlePass = this.handlePass.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,7 +26,6 @@ class App extends Component {
     this.callApi = this.callApi.bind(this);
     this.saveToken = this.saveToken.bind(this);
   }
-
 
   componentDidMount() {
     this.saveToken();
@@ -41,8 +41,6 @@ class App extends Component {
       .then(res => this.setState({ response: res.express }))
       .catch(err => console.log(err));
   }
-
-  
 
   callApi = async (route, data) => {
 
@@ -100,15 +98,8 @@ class App extends Component {
         if (tokenRes.status !== 200) throw Error(tkbody.message);
         
         return tkbody;
-
-          
-
     }
   };
-
- 
-
-  
 
   handleUser(event) {
     this.setState({user: event.target.value});
@@ -166,16 +157,15 @@ class App extends Component {
         <p className="App-intro">{this.state.response}</p>
         <p className="App-intro">{this.state.authRes}</p>
         <form>
-            <label>
-          <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
-          <br/>
-          <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
-            </label>
+          <label>
+            <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
             <br/>
-            <input type="submit" value="Submit" onClick={this.handleSubmit} />
-            <input type="submit" value="Signup" onClick={this.handleSignup} />
-
-          </form>
+            <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
+          </label>
+           <br/>
+           <input type="submit" value="Submit" onClick={this.handleSubmit} />
+           <input type="submit" value="Signup" onClick={this.handleSignup} />
+         </form>
       </div>
       
     );
