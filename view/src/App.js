@@ -1,16 +1,28 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
+import Authentication from './components/authentication.js';
+import Inventory from './components/Inventory/Inventory.js';
 
 class App extends Component {
   state = {
-    response: ''
+    response: '',
+    authenticated: false,
+    siteID: 1,
+    studyYear: 2017,
+    inventoryList: []
   };
 
-  componentDidMount() {
-    this.callApi()
+  async componentDidMount() {
+    await this.callApi()
       .then(res => this.setState({ response: res.express }))
       .catch(err => console.log(err));
+
+      axios.get('/flora/inventory/list/retrieve').then(res => {
+        this.setState({ inventoryList: res.data });
+      });
   }
 
   callApi = async () => {
@@ -21,15 +33,24 @@ class App extends Component {
 
     return body;
   };
+
+  authClick = () => {
+    this.setState({ authenticated: true });
+  }
   
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">EcoLens</h1>
         </header>
-        <p className="App-intro">{this.state.response}</p>
+        <Router>
+          <div>
+            { !this.state.authenticated && <Route exact path="/" render={(props) => <Authentication {...props} authClick={this.authClick} />} />}
+            { this.state.authenticated && <Route exact path="/" render={(props) => <Inventory {...props} inventoryList={this.state.inventoryList} siteID={this.state.siteID} studyYear={this.state.studyYear} />} />}
+          </div>
+        </Router>
       </div>
     );
   }
