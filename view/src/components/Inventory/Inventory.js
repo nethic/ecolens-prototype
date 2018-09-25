@@ -4,20 +4,32 @@ import SpeciesFamily from "./SpeciesFamily.js";
 
 class Inventory extends React.Component {
 
+  state = {
+    siteID: 1,
+    studyYear: 2017,
+    inventoryList: []
+  }
+
+  async componentDidMount() {
+    await axios.get('/flora/inventory/list/retrieve').then(res => {
+      this.setState({ inventoryList: res.data });
+    });
+  }
+
   handleSpeciesCheck = event => {
     let isChecked = event.target.checked;
     let checkedSpeciesID = event.target.id;
     switch (isChecked) {
       case true:
         axios.post('/flora/inventory/observation', {
-          siteID: this.props.siteID,
-          studyYear: this.props.studyYear,
+          siteID: this.state.siteID,
+          studyYear: this.state.studyYear,
           speciesID: checkedSpeciesID
         });
         break;
       case false:
         axios.delete('/flora/inventory/correction', {
-          
+
         });
         break;
     }
@@ -48,7 +60,7 @@ class Inventory extends React.Component {
           <div className="col">
             <div id="accordion">
               {
-                this.props.inventoryList.map(family => {
+                this.state.inventoryList.map(family => {
                   return <SpeciesFamily family={family} key={family[0]} handleSpeciesCheck={this.handleSpeciesCheck} />
                 })
               }
