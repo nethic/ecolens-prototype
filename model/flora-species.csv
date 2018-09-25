@@ -1,0 +1,1897 @@
+"speciesID";"speciesName";"familyID"
+1;"Acorus americanus";1
+2;"Sambucus canadensis";2
+3;"Sambucus racemosa ssp. pubens";2
+4;"Viburnum acerifolium";2
+5;"Viburnum nudum var. cassinoides";2
+6;"Viburnum farreri";2
+7;"Viburnum lantana";2
+8;"Viburnum lantanoides";2
+9;"Viburnum lentago";2
+10;"Viburnum opulus ssp. opulus";2
+11;"Viburnum rafinesquianum";2
+12;"Viburnum recognitum";2
+13;"Viburnum opulus ssp. trilobum";2
+14;"Alisma gramineum";3
+15;"Alisma subcordatum";3
+16;"Alisma triviale";3
+17;"Sagittaria cuneata";3
+18;"Sagittaria graminea ssp. graminea";3
+19;"Sagittaria latifolia";3
+20;"Sagittaria rigida";3
+21;"Amaranthus albus";4
+22;"Amaranthus blitoides";4
+23;"Amaranthus cruentus";4
+24;"Amaranthus hybridus";4
+25;"Amaranthus powellii";4
+26;"Amaranthus retroflexus";4
+27;"Atriplex heterosperma";4
+28;"Atriplex hortensis";4
+29;"Atriplex patula";4
+30;"Atriplex prostrata";4
+31;"Atriplex rosea";4
+32;"Axyris amaranthoides";4
+33;"Beta vulgaris";4
+34;"Chenopodium album";4
+35;"Blitum bonus-henricus";4
+36;"Dysphania botrys";4
+37;"Blitum capitatum ssp. capitatum";4
+38;"Oxybasis glauca ssp. glauca";4
+39;"Chenopodium pratericola";4
+40;"Oxybasis rubra var. rubra";4
+41;"Chenopodiastrum simplex";4
+42;"Corispermum americanum var. americanum";4
+43;"Cycloloma atriplicifolium";4
+44;"Bassia scoparia";4
+45;"Salsola collina";4
+46;"Salsola tragus";4
+47;"Allium ampeloprasum";5
+48;"Allium cepa";5
+49;"Allium giganteum";5
+50;"Allium schoenoprasum var. schoenoprasum";5
+51;"Allium schoenoprasum var. sibiricum";5
+52;"Allium tricoccum";5
+53;"Allium tuberosum";5
+54;"Allium vineale";5
+55;"Galanthus nivalis";5
+56;"Narcissus jonquilla";5
+57;"Narcissus poeticus";5
+58;"Narcissus pseudonarcissus";5
+59;"Cotinus coggygria";6
+60;"Rhus aromatica";6
+61;"Rhus glabra";6
+62;"Toxicodendron radicans var. radicans";6
+63;"Toxicodendron radicans var. rydbergii";6
+64;"Rhus typhina";6
+65;"Toxicodendron vernix";6
+66;"Aegopodium podagraria";7
+67;"Angelica atropurpurea";7
+68;"Anthriscus sylvestris";7
+69;"Carum carvi";7
+70;"Cicuta bulbifera";7
+71;"Cicuta maculata";7
+72;"Conium maculatum";7
+73;"Cryptotaenia canadensis";7
+74;"Cryptotaenia japonica";7
+75;"Daucus carota";7
+76;"Erigenia bulbosa";7
+77;"Eryngium planum";7
+78;"Heracleum maximum";7
+79;"Heracleum mantegazzianum";7
+80;"Heracleum sphondylium";7
+81;"Oenanthe javanica";7
+82;"Osmorhiza claytonii";7
+83;"Osmorhiza longistylis";7
+84;"Pastinaca sativa";7
+85;"Sanicula marilandica";7
+86;"Sanicula odorata";7
+87;"Sium suave";7
+88;"Taenidia integerrima";7
+89;"Torilis arvensis";7
+90;"Torilis japonica";7
+91;"Zizia aurea";7
+92;"Apocynum androsaemifolium";8
+93;"Apocynum cannabinum var. cannabinum";8
+94;"Apocynum cannabinum";8
+95;"Apocynum cannabinum var. hypericifolium";8
+96;"Apocynum x floribundum";8
+97;"Asclepias exaltata";8
+98;"Asclepias incarnata ssp. incarnata";8
+99;"Asclepias sullivantii";8
+100;"Asclepias syriaca";8
+101;"Asclepias tuberosa";8
+102;"Cynanchum louiseae";8
+103;"Cynanchum rossicum";8
+104;"Vinca minor";8
+105;"Ilex verticillata";9
+106;"Ilex mucronata";9
+107;"Arisaema triphyllum";10
+108;"Arum italicum";10
+109;"Calla palustris";10
+110;"Lemna minor";10
+111;"Lemna trisulca";10
+112;"Lemna turionifera";10
+113;"Peltandra virginica";10
+114;"Pistia stratiotes";10
+115;"Spirodela polyrhiza";10
+116;"Symplocarpus foetidus";10
+117;"Wolffia borealis";10
+118;"Wolffia columbiana";10
+119;"Eleutherococcus sieboldianus";11
+120;"Aralia elata";11
+121;"Aralia hispida";11
+122;"Aralia nudicaulis";11
+123;"Aralia racemosa ssp. racemosa";11
+124;"Hedera helix";11
+125;"Hydrocotyle americana";11
+126;"Panax quinquefolius";11
+127;"Panax trifolius";11
+128;"Asarum canadense";12
+129;"Asparagus officinalis";13
+130;"Convallaria majalis";13
+131;"Hosta ventricosa";13
+132;"Hyacinthoides hispanica";13
+133;"Hyacinthus orientalis";13
+134;"Liriope spicata";13
+135;"Maianthemum canadense";13
+136;"Maianthemum racemosum ssp. racemosum";13
+137;"Maianthemum stellatum";13
+138;"Maianthemum trifolium";13
+139;"Muscari armeniacum";13
+140;"Muscari botryoides";13
+141;"Ornithogalum umbellatum";13
+142;"Polygonatum multiflorum";13
+143;"Polygonatum pubescens";13
+144;"Scilla mischtschenkoana";13
+145;"Scilla siberica";13
+146;"Yucca filamentosa";13
+147;"Yucca flaccida";13
+148;"Asplenium platyneuron";14
+149;"Achillea filipendulina";15
+150;"Achillea borealis var. borealis";15
+151;"Achillea millefolium";15
+152;"Achillea ptarmica";15
+153;"Ageratum houstonianum";15
+154;"Ambrosia artemisiifolia";15
+155;"Ambrosia psilostachya";15
+156;"Ambrosia trifida";15
+157;"Anaphalis margaritacea";15
+158;"Anthemis arvensis";15
+159;"Anthemis cotula";15
+160;"Antennaria howellii ssp. howellii";15
+161;"Antennaria howellii ssp. neodioica";15
+162;"Antennaria howellii ssp. petaloidea";15
+163;"Antennaria neglecta";15
+164;"Antennaria parlinii ssp. fallax";15
+165;"Arctium lappa";15
+166;"Arctium minus";15
+167;"Arctium tomentosum";15
+168;"Artemisia abrotanum";15
+169;"Artemisia absinthium";15
+170;"Artemisia annua";15
+171;"Artemisia biennis";15
+172;"Artemisia campestris ssp. caudata";15
+173;"Artemisia dracunculus";15
+174;"Artemisia ludoviciana";15
+175;"Artemisia pontica";15
+176;"Artemisia vulgaris";15
+177;"Symphyotrichum boreale";15
+178;"Symphyotrichum ciliatum";15
+179;"Symphyotrichum ciliolatum";15
+180;"Symphyotrichum cordifolium";15
+181;"Eurybia divaricata";15
+182;"Symphyotrichum ericoides var. ericoides";15
+183;"Symphyotrichum firmum";15
+184;"Symphyotrichum laeve var. laeve";15
+185;"Symphyotrichum lanceolatum var. hirsuticaule";15
+186;"Symphyotrichum lanceolatum var. latifolium";15
+187;"Symphyotrichum lateriflorum var. lateriflorum";15
+188;"Symphyotrichum lanceolatum var. lanceolatum";15
+189;"Eurybia macrophylla";15
+190;"Symphyotrichum novae-angliae";15
+191;"Symphyotrichum ontarionis var. ontarionis";15
+192;"Symphyotrichum oolentangiense";15
+193;"Symphyotrichum pilosum var. pilosum";15
+194;"Symphyotrichum pilosum var. pringlei";15
+195;"Symphyotrichum prenanthoides";15
+196;"Symphyotrichum puniceum var. puniceum";15
+197;"Eurybia schreberi";15
+198;"Doellingeria umbellata var. umbellata";15
+199;"Symphyotrichum urophyllum";15
+200;"Symphyotrichum cordifolium x lateriflorum";15
+201;"Symphyotrichum x amethystinum";15
+202;"Tanacetum balsamita";15
+203;"Bellis perennis";15
+204;"Bidens cernua";15
+205;"Bidens discoidea";15
+206;"Bidens frondosa";15
+207;"Bidens tripartita";15
+208;"Bidens vulgata";15
+209;"Calendula officinalis";15
+210;"Carduus acanthoides";15
+211;"Carduus nutans ssp. nutans";15
+212;"Centaurea cyanus";15
+213;"Centaurea diffusa";15
+214;"Centaurea jacea";15
+215;"Centaurea macrocephala";15
+216;"Centaurea stoebe ssp. micranthos";15
+217;"Centaurea montana";15
+218;"Centaurea nigra";15
+219;"Leucanthemum vulgare";15
+220;"Chrysanthemum maximum";15
+221;"Cichorium intybus";15
+222;"Cirsium arvense";15
+223;"Cirsium discolor";15
+224;"Cirsium muticum";15
+225;"Cirsium vulgare";15
+226;"Erigeron canadensis";15
+227;"Coreopsis grandiflora";15
+228;"Coreopsis lanceolata";15
+229;"Coreopsis tripteris";15
+230;"Cosmos bipinnatus";15
+231;"Cota tinctoria";15
+232;"Crepis tectorum";15
+233;"Doronicum plantagineum";15
+234;"Echinacea purpurea";15
+235;"Echinops sphaerocephalus";15
+236;"Erechtites hieraciifolius var. hieraciifolius";15
+237;"Erigeron annuus";15
+238;"Erigeron philadelphicus var. philadelphicus";15
+239;"Erigeron pulchellus";15
+240;"Erigeron strigosus";15
+241;"Eupatorium altissimum";15
+242;"Eutrochium fistulosum";15
+243;"Eutrochium maculatum var. maculatum";15
+244;"Eupatorium perfoliatum";15
+245;"Eutrochium purpureum var. purpureum";15
+246;"Ageratina altissima var. altissima";15
+247;"Euthamia graminifolia";15
+248;"Gaillardia aristata";15
+249;"Galinsoga parviflora";15
+250;"Galinsoga quadriradiata";15
+251;"Pseudognaphalium macounii";15
+252;"Pseudognaphalium obtusifolium";15
+253;"Gnaphalium uliginosum";15
+254;"Grindelia squarrosa";15
+255;"Helianthus annuus";15
+256;"Helenium autumnale";15
+257;"Helianthus decapetalus";15
+258;"Helianthus divaricatus";15
+259;"Helianthus giganteus";15
+260;"Heliopsis helianthoides";15
+261;"Helianthus maximiliani";15
+262;"Helianthus pauciflorus ssp. subrhomboideus";15
+263;"Helianthus strumosus";15
+264;"Helianthus tuberosus";15
+265;"Pilosella aurantiaca";15
+266;"Pilosella caespitosa";15
+267;"Pilosella flagellaris";15
+268;"Hieracium umbellatum";15
+269;"Hieracium vulgatum";15
+270;"Hieracium murorum";15
+271;"Pilosella officinarum";15
+272;"Pilosella piloselloides";15
+273;"Pilosella piloselloides ssp. praealta";15
+274;"Hieracium scabrum";15
+275;"Hieracium venosum";15
+276;"Pilosella x floribunda";15
+277;"Hypochaeris radicata";15
+278;"Inula britannica";15
+279;"Inula helenium";15
+280;"Cyclachaena xanthiifolia";15
+281;"Knautia arvensis";15
+282;"Lactuca biennis";15
+283;"Lactuca canadensis";15
+284;"Mycelis muralis";15
+285;"Lactuca saligna";15
+286;"Lactuca serriola";15
+287;"Lapsana communis";15
+288;"Scorzoneroides autumnalis";15
+289;"Leontodon saxatilis ssp. saxatilis";15
+290;"Liatris cylindracea";15
+291;"Liatris spicata";15
+292;"Ligularia dentata";15
+293;"Matricaria discoidea";15
+294;"Tripleurospermum inodorum";15
+295;"Matricaria chamomilla";15
+296;"Bidens beckii";15
+297;"Onopordum acanthium";15
+298;"Petasites frigidus";15
+299;"Petasites japonicus";15
+300;"Picris hieracioides";15
+301;"Pityopsis falcata";15
+302;"Nabalus albus";15
+303;"Nabalus altissimus";15
+304;"Ratibida columnifera";15
+305;"Ratibida pinnata";15
+306;"Rudbeckia fulgida";15
+307;"Rudbeckia hirta";15
+308;"Rudbeckia laciniata";15
+309;"Rudbeckia triloba";15
+310;"Packera aurea";15
+311;"Jacobaea vulgaris";15
+312;"Packera paupercula";15
+313;"Senecio viscosus";15
+314;"Senecio vulgaris";15
+315;"Silphium integrifolium";15
+316;"Silphium laciniatum";15
+317;"Silybum marianum";15
+318;"Silphium perfoliatum";15
+319;"Solidago altissima";15
+320;"Solidago arguta var. arguta";15
+321;"Solidago bicolor";15
+322;"Solidago caesia";15
+323;"Solidago canadensis var. canadensis";15
+324;"Solidago flexicaulis";15
+325;"Solidago gigantea";15
+326;"Solidago hispida";15
+327;"Solidago juncea";15
+328;"Solidago nemoralis ssp. nemoralis";15
+329;"Solidago ohioensis";15
+330;"Solidago patula";15
+331;"Solidago ptarmicoides";15
+332;"Solidago rigida ssp. rigida";15
+333;"Solidago rugosa ssp. rugosa";15
+334;"Solidago squarrosa";15
+335;"Solidago uliginosa";15
+336;"Sonchus arvensis ssp. arvensis";15
+337;"Sonchus arvensis ssp. uliginosus";15
+338;"Sonchus asper";15
+339;"Sonchus oleraceus";15
+340;"Tanacetum parthenium";15
+341;"Tanacetum vulgare";15
+342;"Taraxacum erythrospermum";15
+343;"Taraxacum officinale";15
+344;"Taraxacum palustre";15
+345;"Tragopogon dubius";15
+346;"Tragopogon porrifolius";15
+347;"Tragopogon pratensis";15
+348;"Tussilago farfara";15
+349;"Verbesina alternifolia";15
+350;"Vernonia gigantea";15
+351;"Vernonia missurica";15
+352;"Xanthium spinosum";15
+353;"Xanthium strumarium";15
+354;"Impatiens balsamina";16
+355;"Impatiens capensis";16
+356;"Impatiens glandulifera";16
+357;"Impatiens pallida";16
+358;"Impatiens parviflora";16
+359;"Berberis aquifolium";17
+360;"Berberis thunbergii";17
+361;"Berberis vulgaris";17
+362;"Caulophyllum giganteum";17
+363;"Caulophyllum thalictroides";17
+364;"Jeffersonia diphylla";17
+365;"Podophyllum peltatum";17
+366;"Alnus glutinosa";18
+367;"Alnus incana ssp. incana";18
+368;"Alnus incana ssp. rugosa";18
+369;"Alnus glutinosa x incana ssp. rugosa";18
+370;"Betula alleghaniensis";18
+371;"Betula papyrifera";18
+372;"Betula pendula";18
+373;"Betula pumila";18
+374;"Betula x purpusii";18
+375;"Carpinus betulus";18
+376;"Carpinus caroliniana ssp. virginiana";18
+377;"Corylus americana";18
+378;"Corylus avellana";18
+379;"Corylus cornuta";18
+380;"Corylus maxima";18
+381;"Ostrya virginiana";18
+382;"Campsis radicans";19
+383;"Catalpa speciosa";19
+384;"Woodwardia virginica";20
+385;"Anchusa arvensis";21
+386;"Borago officinalis";21
+387;"Brunnera macrophylla";21
+388;"Buglossoides arvensis";21
+389;"Andersonglossum virginianum";21
+390;"Cynoglossum officinale";21
+391;"Echium vulgare";21
+392;"Hackelia deflexa";21
+393;"Hackelia virginiana";21
+394;"Hydrophyllum canadense";21
+395;"Hydrophyllum virginianum";21
+396;"Lappula squarrosa";21
+397;"Lithospermum latifolium";21
+398;"Lithospermum officinale";21
+399;"Mertensia virginica";21
+400;"Myosotis arvensis";21
+401;"Myosotis laxa";21
+402;"Myosotis scorpioides";21
+403;"Myosotis stricta";21
+404;"Myosotis sylvatica";21
+405;"Myosotis verna";21
+406;"Lithospermum parviflorum";21
+407;"Pulmonaria officinalis";21
+408;"Pulmonaria rubra";21
+409;"Symphytum asperum";21
+410;"Symphytum officinale";21
+411;"Alliaria petiolata";22
+412;"Alyssum alyssoides";22
+413;"Borodinia canadensis";22
+414;"Boechera divaricarpa";22
+415;"Boechera stricta";22
+416;"Turritis glabra";22
+417;"Arabis pycnocarpa var. pycnocarpa";22
+418;"Borodinia laevigata";22
+419;"Arabis procurrens";22
+420;"Arabidopsis thaliana";22
+421;"Rorippa aquatica";22
+422;"Armoracia rusticana";22
+423;"Barbarea vulgaris";22
+424;"Berteroa incana";22
+425;"Brassica juncea";22
+426;"Brassica napus";22
+427;"Brassica nigra";22
+428;"Brassica oleracea";22
+429;"Brassica rapa";22
+430;"Cakile edentula";22
+431;"Camelina microcarpa";22
+432;"Camelina sativa";22
+433;"Capsella bursa-pastoris";22
+434;"Cardamine bulbosa";22
+435;"Cardamine concatenata";22
+436;"Cardamine diphylla";22
+437;"Cardamine douglassii";22
+438;"Cardamine flexuosa";22
+439;"Cardamine hirsuta";22
+440;"Cardamine impatiens";22
+441;"Cardamine pensylvanica";22
+442;"Cardamine nymanii";22
+443;"Cardamine maxima";22
+444;"Conringia orientalis";22
+445;"Lepidium coronopus";22
+446;"Descurainia pinnata ssp. brachycarpa";22
+447;"Descurainia sophia";22
+448;"Diplotaxis muralis";22
+449;"Diplotaxis tenuifolia";22
+450;"Draba verna";22
+451;"Erucastrum gallicum";22
+452;"Erysimum capitatum";22
+453;"Erysimum cheiranthoides";22
+454;"Erysimum hieraciifolium";22
+455;"Erysimum inconspicuum";22
+456;"Hesperis matronalis";22
+457;"Iberis umbellata";22
+458;"Isatis tinctoria";22
+459;"Lepidium campestre";22
+460;"Lepidium chalepense";22
+461;"Lepidium densiflorum";22
+462;"Lepidium perfoliatum";22
+463;"Lepidium ramosissimum";22
+464;"Lepidium ruderale";22
+465;"Lepidium sativum";22
+466;"Lepidium virginicum";22
+467;"Lobularia maritima";22
+468;"Lunaria annua";22
+469;"Nasturtium microphyllum";22
+470;"Nasturtium officinale";22
+471;"Neslia paniculata";22
+472;"Raphanus raphanistrum";22
+473;"Raphanus sativus";22
+474;"Rorippa austriaca";22
+475;"Rorippa palustris ssp. palustris";22
+476;"Rorippa palustris ssp. hispida";22
+477;"Rorippa sylvestris";22
+478;"Sinapis arvensis";22
+479;"Sisymbrium altissimum";22
+480;"Sisymbrium loeselii";22
+481;"Sisymbrium officinale";22
+482;"Thlaspi arvense";22
+483;"Butomus umbellatus";23
+484;"Buxus sempervirens";24
+485;"Pachysandra terminalis";24
+486;"Brasenia schreberi";25
+487;"Campanula aparinoides";26
+488;"Campanula persicifolia";26
+489;"Campanula rapunculoides";26
+490;"Campanula rotundifolia";26
+491;"Lobelia cardinalis";26
+492;"Lobelia erinus";26
+493;"Lobelia inflata";26
+494;"Lobelia kalmii";26
+495;"Lobelia siphilitica";26
+496;"Lobelia spicata";26
+497;"Cannabis sativa";27
+498;"Celtis occidentalis";27
+499;"Humulus japonicus";27
+500;"Humulus lupulus";27
+501;"Diervilla lonicera";28
+502;"Dipsacus fullonum";28
+503;"Kolkwitzia amabilis";28
+504;"Linnaea borealis ssp. longiflora";28
+505;"Lonicera caerulea";28
+506;"Lonicera canadensis";28
+507;"Lonicera dioica";28
+508;"Lonicera hirsuta";28
+509;"Lonicera japonica";28
+510;"Lonicera maackii";28
+511;"Lonicera morrowii";28
+512;"Lonicera oblongifolia";28
+513;"Lonicera tatarica";28
+514;"Lonicera x bella";28
+515;"Lonicera xylosteum";28
+516;"Symphoricarpos albus var. albus";28
+517;"Symphoricarpos albus var. laevigatus";28
+518;"Symphoricarpos occidentalis";28
+519;"Triosteum aurantiacum";28
+520;"Valeriana officinalis";28
+521;"Valeriana uliginosa";28
+522;"Agrostemma githago";29
+523;"Arenaria serpyllifolia";29
+524;"Cerastium arvense ssp. arvense";29
+525;"Cerastium fontanum";29
+526;"Cerastium semidecandrum";29
+527;"Cerastium tomentosum";29
+528;"Dianthus armeria";29
+529;"Dianthus barbatus";29
+530;"Dianthus deltoides";29
+531;"Dianthus plumarius";29
+532;"Gypsophila paniculata";29
+533;"Holosteum umbellatum";29
+534;"Silene chalcedonica";29
+535;"Silene coronaria";29
+536;"Moehringia lateriflora";29
+537;"Myosoton aquaticum";29
+538;"Sagina japonica";29
+539;"Sagina procumbens";29
+540;"Saponaria officinalis";29
+541;"Scleranthus annuus";29
+542;"Silene antirrhina";29
+543;"Atocion armeria";29
+544;"Silene csereii";29
+545;"Silene dichotoma";29
+546;"Silene noctiflora";29
+547;"Silene latifolia";29
+548;"Silene vulgaris";29
+549;"Silene x hampeana";29
+550;"Spergula arvensis";29
+551;"Spergularia salina";29
+552;"Spergularia media";29
+553;"Spergularia rubra";29
+554;"Stellaria graminea";29
+555;"Stellaria longifolia";29
+556;"Stellaria media";29
+557;"Vaccaria hispanica";29
+558;"Celastrus orbiculatus";30
+559;"Celastrus scandens";30
+560;"Celastrus orbiculatus x scandens";30
+561;"Euonymus alatus";30
+562;"Euonymus atropurpureus";30
+563;"Euonymus europaeus";30
+564;"Euonymus fortunei";30
+565;"Euonymus obovatus";30
+566;"Parnassia parviflora";30
+567;"Ceratophyllum demersum";31
+568;"Cercidiphyllum japonicum";32
+569;"Crocanthemum bicknellii";33
+570;"Crocanthemum canadense";33
+571;"Lechea intermedia";33
+572;"Tarenaya hassleriana";34
+573;"Polanisia dodecandra";34
+574;"Streptopus lanceolatus var. lanceolatus";35
+575;"Uvularia grandiflora";35
+576;"Commelina communis";36
+577;"Tradescantia ohiensis";36
+578;"Tradescantia virginiana";36
+579;"Calystegia sepium ssp. americana";37
+580;"Calystegia sepium ssp. angulata";37
+581;"Calystegia sepium";37
+582;"Calystegia spithamaea ssp. spithamaea";37
+583;"Convolvulus arvensis";37
+584;"Cuscuta campestris";37
+585;"Cuscuta gronovii";37
+586;"Ipomoea hederacea";37
+587;"Ipomoea purpurea";37
+588;"Cornus alba";38
+589;"Cornus alternifolia";38
+590;"Cornus obliqua";38
+591;"Cornus canadensis";38
+592;"Cornus drummondii";38
+593;"Cornus racemosa";38
+594;"Cornus mas";38
+595;"Cornus rugosa";38
+596;"Cornus stolonifera";38
+597;"Sedum acre";39
+598;"Sedum album";39
+599;"Sedum hispanicum";39
+600;"Phedimus hybridus";39
+601;"Sedum rupestre";39
+602;"Sedum sarmentosum";39
+603;"Hylotelephium spectabile";39
+604;"Phedimus spurius";39
+605;"Hylotelephium telephium";39
+606;"Citrullus colocynthis";40
+607;"Cucurbita pepo ssp. pepo";40
+608;"Cucumis melo";40
+609;"Cucumis sativus";40
+610;"Echinocystis lobata";40
+611;"Sicyos angulatus";40
+612;"Juniperus chinensis";41
+613;"Juniperus communis var. depressa";41
+614;"Juniperus horizontalis";41
+615;"Juniperus horizontalis x virginiana";41
+616;"Juniperus sabina";41
+617;"Juniperus virginiana";41
+618;"Juniperus x pfitzeriana";41
+619;"Thuja occidentalis";41
+620;"Carex albicans var. albicans";42
+621;"Carex albursina";42
+622;"Carex alopecoidea";42
+623;"Carex grisea";42
+624;"Carex appalachica";42
+625;"Carex aquatilis";42
+626;"Carex arctata";42
+627;"Carex atherodes";42
+628;"Carex aurea";42
+629;"Carex backii";42
+630;"Carex bebbii";42
+631;"Carex blanda";42
+632;"Carex brevior";42
+633;"Carex bromoides";42
+634;"Carex brunnescens ssp. brunnescens";42
+635;"Carex buxbaumii";42
+636;"Carex canescens ssp. canescens";42
+637;"Carex castanea";42
+638;"Carex cephaloidea";42
+639;"Carex cephalophora";42
+640;"Carex chordorrhiza";42
+641;"Carex communis";42
+642;"Carex comosa";42
+643;"Carex crawfordii";42
+644;"Carex crinita";42
+645;"Carex cristatella";42
+646;"Carex cryptolepis";42
+647;"Carex debilis var. rudgei";42
+648;"Carex deweyana";42
+649;"Carex diandra";42
+650;"Carex digitalis";42
+651;"Carex disperma";42
+652;"Carex divulsa ssp. divulsa";42
+653;"Carex eburnea";42
+654;"Carex echinata ssp. echinata";42
+655;"Carex flacca";42
+656;"Carex flava";42
+657;"Carex formosa";42
+658;"Carex garberi";42
+659;"Carex gracillima";42
+660;"Carex gracilescens";42
+661;"Carex granularis";42
+662;"Carex grayi";42
+663;"Carex gynandra";42
+664;"Carex hirtifolia";42
+665;"Carex hitchcockiana";42
+666;"Carex houghtoniana";42
+667;"Carex hystericina";42
+668;"Carex interior";42
+669;"Carex intumescens";42
+670;"Carex jamesii";42
+671;"Carex lacustris";42
+672;"Carex laevivaginata";42
+673;"Carex lasiocarpa";42
+674;"Carex laxiculmis var. laxiculmis";42
+675;"Carex laxiflora";42
+676;"Carex leptonervia";42
+677;"Carex leptalea";42
+678;"Carex limosa";42
+679;"Carex lupulina";42
+680;"Carex lurida";42
+681;"Carex magellanica ssp. irrigua";42
+682;"Carex molesta";42
+683;"Carex muehlenbergii var. muehlenbergii";42
+684;"Carex normalis";42
+685;"Carex pallescens";42
+686;"Carex pauciflora";42
+687;"Carex peckii";42
+688;"Carex pedunculata";42
+689;"Carex pellita";42
+690;"Carex pensylvanica";42
+691;"Carex plantaginea";42
+692;"Carex platyphylla";42
+693;"Carex praegracilis";42
+694;"Carex prairea";42
+695;"Carex prasina";42
+696;"Carex projecta";42
+697;"Carex pseudocyperus";42
+698;"Carex radiata";42
+699;"Carex retrorsa";42
+700;"Carex rosea";42
+701;"Carex sartwellii";42
+702;"Carex scabrata";42
+703;"Carex schweinitzii";42
+704;"Carex scoparia";42
+705;"Carex siccata";42
+706;"Carex sparganioides";42
+707;"Carex spicata";42
+708;"Carex sprengelii";42
+709;"Carex stipata";42
+710;"Carex stricta";42
+711;"Carex sychnocephala";42
+712;"Carex sylvatica";42
+713;"Carex echinodes";42
+714;"Carex tenera";42
+715;"Carex tenuiflora";42
+717;"Carex torta";42
+718;"Carex tonsa var. rugosperma";42
+719;"Carex billingsii";42
+720;"Carex tribuloides";42
+721;"Carex trichocarpa";42
+722;"Carex trisperma";42
+723;"Carex tuckermanii";42
+724;"Carex utriculata";42
+725;"Carex vaginata";42
+726;"Carex vesicaria";42
+727;"Carex viridula ssp. viridula";42
+728;"Carex vulpinoidea";42
+729;"Carex woodii";42
+730;"Carex lacustris x trichocarpa";42
+731;"Cladium mariscoides";42
+732;"Cyperus bipartitus";42
+733;"Cyperus diandrus";42
+734;"Cyperus erythrorhizos";42
+735;"Cyperus esculentus";42
+736;"Cyperus fuscus";42
+737;"Cyperus lupulinus";42
+738;"Cyperus odoratus";42
+739;"Cyperus schweinitzii";42
+740;"Cyperus strigosus";42
+741;"Dulichium arundinaceum";42
+742;"Eleocharis acicularis";42
+743;"Eleocharis elliptica";42
+744;"Eleocharis erythropoda";42
+745;"Eleocharis intermedia";42
+746;"Eleocharis obtusa";42
+747;"Eleocharis flavescens var. olivacea";42
+748;"Eleocharis quinqueflora";42
+749;"Eleocharis palustris";42
+750;"Eriophorum gracile";42
+751;"Eriophorum tenellum";42
+752;"Eriophorum vaginatum ssp. spissum";42
+753;"Eriophorum virginicum";42
+754;"Eriophorum viridicarinatum";42
+755;"Rhynchospora alba";42
+756;"Schoenoplectus acutus var. acutus";42
+757;"Scirpus atrovirens";42
+758;"Scirpus cyperinus";42
+759;"Bolboschoenus fluviatilis";42
+760;"Scirpus hattorianus";42
+761;"Trichophorum alpinum";42
+762;"Scirpus microcarpus";42
+763;"Scirpus pendulus";42
+764;"Schoenoplectus pungens var. pungens";42
+765;"Schoenoplectiella smithii var. smithii";42
+766;"Schoenoplectus tabernaemontani";42
+767;"Trichophorum planifolium";42
+768;"Scleria triglomerata";42
+769;"Scleria verticillata";42
+770;"Dennstaedtia punctilobula";43
+771;"Pteridium aquilinum var. latiusculum";43
+772;"Drosera intermedia";44
+773;"Drosera rotundifolia";44
+774;"Dryopteris carthusiana";45
+775;"Dryopteris clintoniana";45
+776;"Dryopteris cristata";45
+777;"Dryopteris filix-mas";45
+778;"Dryopteris goldiana";45
+779;"Dryopteris intermedia";45
+780;"Dryopteris marginalis";45
+781;"Dryopteris x benedictii";45
+782;"Dryopteris x boottii";45
+783;"Dryopteris x dowellii";45
+784;"Dryopteris x neowherryi";45
+785;"Dryopteris x slossoniae";45
+786;"Dryopteris x triploidea";45
+787;"Dryopteris x uliginosa";45
+788;"Polystichum acrostichoides";45
+789;"Polystichum lonchitis";45
+790;"Elaeagnus angustifolia";46
+791;"Elaeagnus commutata";46
+792;"Elaeagnus umbellata";46
+793;"Hippophae rhamnoides";46
+794;"Shepherdia argentea";46
+795;"Shepherdia canadensis";46
+796;"Equisetum arvense";47
+797;"Equisetum fluviatile";47
+798;"Equisetum hyemale ssp. affine";47
+799;"Equisetum palustre";47
+800;"Equisetum pratense";47
+801;"Equisetum scirpoides";47
+802;"Equisetum sylvaticum";47
+803;"Equisetum variegatum ssp. variegatum";47
+804;"Equisetum x litorale";47
+805;"Equisetum x mackayi";47
+806;"Equisetum x nelsonii";47
+807;"Andromeda polifolia var. latifolia";48
+808;"Arctostaphylos uva-ursi";48
+809;"Chamaedaphne calyculata";48
+810;"Chimaphila umbellata ssp. umbellata";48
+811;"Epigaea repens";48
+812;"Gaultheria hispidula";48
+813;"Gaultheria procumbens";48
+814;"Gaylussacia baccata";48
+815;"Kalmia polifolia";48
+816;"Rhododendron groenlandicum";48
+817;"Hypopitys monotropa";48
+818;"Monotropa uniflora";48
+819;"Moneses uniflora";48
+820;"Orthilia secunda";48
+821;"Pterospora andromedea";48
+822;"Pyrola asarifolia";48
+823;"Pyrola chlorantha";48
+824;"Pyrola elliptica";48
+825;"Vaccinium angustifolium";48
+826;"Vaccinium corymbosum";48
+827;"Vaccinium macrocarpon";48
+828;"Vaccinium myrtilloides";48
+829;"Vaccinium oxycoccos";48
+830;"Vaccinium pallidum";48
+831;"Acalypha rhomboidea";49
+832;"Euphorbia glyptosperma";49
+833;"Euphorbia maculata";49
+834;"Euphorbia nutans";49
+835;"Euphorbia polygonifolia";49
+836;"Euphorbia serpyllifolia ssp. serpyllifolia";49
+837;"Euphorbia vermiculata";49
+838;"Euphorbia cyparissias";49
+839;"Euphorbia dentata";49
+840;"Euphorbia esula";49
+841;"Euphorbia helioscopia";49
+842;"Euphorbia hirta";49
+843;"Euphorbia marginata";49
+844;"Euphorbia peplus";49
+845;"Euphorbia platyphyllos";49
+846;"Euphorbia virgata";49
+847;"Euphorbia x pseudoesula";49
+848;"Amorpha fruticosa";50
+849;"Amphicarpaea bracteata";50
+850;"Apios americana";50
+851;"Astragalus canadensis";50
+852;"Caragana arborescens";50
+853;"Securigera varia";50
+854;"Cytisus scoparius";50
+855;"Desmodium canadense";50
+856;"Hylodesmum glutinosum";50
+857;"Hylodesmum nudiflorum";50
+858;"Desmodium dillenii";50
+859;"Galega officinalis";50
+860;"Gleditsia triacanthos";50
+861;"Gymnocladus dioicus";50
+862;"Lathyrus japonicus";50
+863;"Lathyrus latifolius";50
+864;"Lathyrus ochroleucus";50
+865;"Lathyrus odoratus";50
+866;"Lathyrus palustris";50
+867;"Lathyrus pratensis";50
+868;"Lathyrus sylvestris";50
+869;"Lathyrus tuberosus";50
+870;"Lespedeza capitata";50
+871;"Lespedeza hirta";50
+872;"Lotus corniculatus";50
+873;"Lupinus perennis";50
+874;"Lupinus polyphyllus";50
+875;"Medicago lupulina";50
+876;"Medicago polymorpha";50
+877;"Medicago falcata";50
+878;"Medicago sativa ssp. sativa";50
+879;"Melilotus albus";50
+880;"Melilotus officinalis";50
+881;"Phaseolus vulgaris";50
+882;"Pisum sativum";50
+883;"Robinia pseudoacacia";50
+884;"Robinia viscosa";50
+885;"Trifolium arvense";50
+886;"Trifolium aureum";50
+887;"Trifolium campestre";50
+888;"Trifolium fragiferum";50
+889;"Trifolium hybridum";50
+890;"Trifolium incarnatum";50
+891;"Trifolium medium";50
+892;"Trifolium pratense";50
+893;"Trifolium repens";50
+894;"Vicia americana";50
+895;"Vicia cracca";50
+896;"Vicia sativa var. angustifolia";50
+897;"Vicia tetrasperma";50
+898;"Vicia villosa";50
+899;"Wisteria sinensis";50
+900;"Fagus grandifolia";51
+901;"Quercus alba";51
+902;"Quercus macrocarpa";51
+903;"Quercus robur";51
+904;"Quercus rubra";51
+905;"Quercus velutina";51
+906;"Quercus x bebbiana";51
+907;"Quercus x hawkinsii";51
+908;"Centaurium pulchellum";52
+909;"Gentiana andrewsii f. albiflora";52
+910;"Gentiana andrewsii";52
+911;"Gentianopsis crinita";52
+912;"Gentiana puberulenta";52
+913;"Gentianella quinquefolia";52
+914;"Erodium cicutarium ssp. cicutarium";53
+915;"Geranium bicknellii";53
+916;"Geranium macrorrhizum";53
+917;"Geranium maculatum";53
+918;"Geranium molle";53
+919;"Geranium phaeum";53
+920;"Geranium robertianum";53
+921;"Geranium sanguineum";53
+922;"Geranium sibiricum";53
+923;"Ginkgo biloba";54
+924;"Ribes americanum";54
+925;"Ribes cynosbati";54
+926;"Ribes glandulosum";54
+927;"Ribes hirtellum";54
+928;"Ribes hudsonianum";54
+929;"Ribes nigrum";54
+930;"Ribes aureum var. villosum";54
+931;"Ribes rubrum";54
+932;"Ribes triste";54
+933;"Ribes uva-crispa";54
+934;"Myriophyllum heterophyllum";55
+935;"Myriophyllum sibiricum";55
+936;"Myriophyllum spicatum";55
+937;"Myriophyllum verticillatum";55
+938;"Penthorum sedoides";55
+939;"Proserpinaca palustris";55
+940;"Hamamelis virginiana";56
+941;"Hydrangea macrophylla";57
+942;"Philadelphus coronarius";57
+943;"Elodea canadensis";58
+944;"Elodea nuttallii";58
+945;"Hydrocharis morsus-ranae";58
+946;"Najas flexilis";58
+947;"Najas guadalupensis ssp. olivacea";58
+948;"Stratiotes aloides";58
+949;"Vallisneria americana";58
+950;"Hypericum ascyron";59
+951;"Hypericum canadense";59
+952;"Hypericum hirsutum";59
+953;"Hypericum majus";59
+954;"Hypericum perforatum";59
+955;"Hypericum prolificum";59
+956;"Hypericum punctatum";59
+957;"Hypericum fraseri";59
+958;"Hypoxis hirsuta";60
+959;"Crocus vernus";61
+960;"Iris germanica";61
+961;"Iris pseudacorus";61
+962;"Iris sibirica";61
+963;"Iris versicolor";61
+964;"Iris virginica var. shrevei";61
+965;"Sisyrinchium montanum";61
+966;"Carya cordiformis";62
+967;"Carya ovata";62
+968;"Juglans ailantifolia";62
+969;"Juglans cinerea";62
+970;"Juglans nigra";62
+971;"Juglans regia";62
+972;"Juglans x bixbyi";62
+973;"Juncus acuminatus";63
+974;"Juncus alpinoarticulatus";63
+975;"Juncus articulatus";63
+976;"Juncus balticus ssp. littoralis";63
+977;"Juncus brachycephalus";63
+978;"Juncus brevicaudatus";63
+979;"Juncus bufonius";63
+980;"Juncus canadensis";63
+981;"Juncus compressus";63
+982;"Juncus dudleyi";63
+983;"Juncus effusus";63
+984;"Juncus gerardii";63
+985;"Juncus nodosus";63
+986;"Juncus tenuis";63
+987;"Juncus torreyi";63
+988;"Luzula acuminata";63
+989;"Luzula multiflora ssp. multiflora";63
+990;"Triglochin maritima";64
+991;"Triglochin palustris";64
+992;"Clinopodium acinos";65
+993;"Agastache foeniculum";65
+994;"Agastache nepetoides";65
+995;"Ajuga genevensis";65
+996;"Ajuga reptans";65
+997;"Clinopodium vulgare";65
+998;"Collinsonia canadensis";65
+999;"Dracocephalum parviflorum";65
+1000;"Galeopsis speciosa";65
+1001;"Galeopsis tetrahit";65
+1002;"Glechoma hederacea";65
+1003;"Hedeoma hispida";65
+1004;"Hedeoma pulegioides";65
+1005;"Hyssopus officinalis";65
+1006;"Lamium amplexicaule";65
+1007;"Lamiastrum galeobdolon";65
+1008;"Lamium maculatum";65
+1009;"Lamium purpureum";65
+1010;"Leonurus cardiaca ssp. cardiaca";65
+1011;"Lycopus americanus";65
+1012;"Lycopus europaeus";65
+1013;"Lycopus uniflorus";65
+1014;"Lycopus americanus x europaeus";65
+1015;"Melissa officinalis";65
+1016;"Mentha aquatica";65
+1017;"Mentha canadensis";65
+1018;"Mentha spicata";65
+1019;"Mentha x gentilis";65
+1020;"Mentha x piperita";65
+1021;"Mentha x verticillata";65
+1022;"Mentha x villosa";65
+1023;"Monarda didyma";65
+1024;"Monarda fistulosa";65
+1025;"Nepeta cataria";65
+1026;"Origanum vulgare";65
+1027;"Perilla frutescens";65
+1028;"Physostegia virginiana ssp. virginiana";65
+1029;"Prunella laciniata";65
+1030;"Prunella vulgaris ssp. lanceolata";65
+1031;"Prunella vulgaris";65
+1032;"Prunella vulgaris ssp. vulgaris";65
+1033;"Pycnanthemum tenuifolium";65
+1034;"Pycnanthemum verticillatum var. pilosum";65
+1035;"Pycnanthemum virginianum";65
+1036;"Salvia coerulea";65
+1037;"Salvia pratensis";65
+1038;"Salvia reflexa";65
+1039;"Salvia sclarea";65
+1040;"Satureja hortensis";65
+1041;"Scutellaria galericulata";65
+1042;"Scutellaria lateriflora";65
+1043;"Scutellaria parvula";65
+1044;"Stachys byzantina";65
+1045;"Stachys hispida";65
+1046;"Stachys palustris";65
+1047;"Teucrium canadense ssp. canadense";65
+1048;"Thymus praecox ssp. arcticus";65
+1049;"Akebia quinata";66
+1050;"Lindera benzoin";67
+1051;"Sassafras albidum";67
+1052;"Utricularia intermedia";68
+1053;"Utricularia minor";68
+1054;"Utricularia vulgaris";68
+1055;"Clintonia borealis";69
+1056;"Erythronium albidum";69
+1057;"Erythronium americanum ssp. americanum";69
+1058;"Fritillaria meleagris";69
+1059;"Lilium lancifolium";69
+1060;"Lilium michiganense";69
+1061;"Lilium philadelphicum";69
+1062;"Medeola virginiana";69
+1063;"Tulipa sylvestris";69
+1064;"Tulipa x hybrida";69
+1065;"Floerkea proserpinacoides";70
+1066;"Linum medium var. medium";71
+1067;"Linum perenne";71
+1068;"Linum usitatissimum";71
+1069;"Linum virginianum";71
+1070;"Lindernia dubia";72
+1071;"Arceuthobium pusillum";73
+1072;"Diphasiastrum digitatum";74
+1073;"Diphasiastrum tristachyum";74
+1074;"Huperzia lucidula";74
+1075;"Lycopodium annotinum";74
+1076;"Lycopodium clavatum";74
+1077;"Dendrolycopodium dendroideum";74
+1078;"Dendrolycopodium hickeyi";74
+1079;"Dendrolycopodium obscurum";74
+1080;"Decodon verticillatus";75
+1081;"Lythrum salicaria";75
+1082;"Abutilon theophrasti";76
+1083;"Alcea rosea";76
+1084;"Althaea hirsuta";76
+1085;"Althaea officinalis";76
+1086;"Hibiscus moscheutos";76
+1087;"Hibiscus syriacus";76
+1088;"Hibiscus trionum";76
+1089;"Malva alcea";76
+1090;"Malva moschata";76
+1091;"Malva neglecta";76
+1092;"Malva pusilla";76
+1093;"Malva sylvestris";76
+1094;"Tilia americana";76
+1095;"Tilia cordata";76
+1096;"Tilia americana var. heterophylla";76
+1097;"Tilia x flavescens";76
+1098;"Marsilea quadrifolia";77
+1099;"Trillium cernuum";78
+1100;"Trillium cuneatum";78
+1101;"Trillium erectum";78
+1102;"Trillium grandiflorum";78
+1103;"Trillium discolor";78
+1104;"Trillium undulatum";78
+1105;"Anticlea elegans";78
+1106;"Menispermum canadense";79
+1107;"Menyanthes trifoliata";80
+1108;"Nymphoides peltata";80
+1109;"Mollugo verticillata";81
+1110;"Claytonia caroliniana";82
+1111;"Claytonia virginica";82
+1112;"Maclura pomifera";83
+1113;"Morus alba";83
+1114;"Morus rubra";83
+1115;"Morus alba x rubra";83
+1116;"Comptonia peregrina";84
+1117;"Myrica gale";84
+1118;"Morella pensylvanica";84
+1119;"Mirabilis nyctaginea";85
+1120;"Nuphar variegata";86
+1121;"Nymphaea odorata ssp. odorata";86
+1122;"Nymphaea odorata";86
+1123;"Nymphaea odorata ssp. tuberosa";86
+1124;"Forsythia suspensa";87
+1125;"Forsythia viridissima";87
+1126;"Fraxinus americana";87
+1127;"Fraxinus excelsior";87
+1128;"Fraxinus nigra";87
+1129;"Fraxinus pennsylvanica";87
+1130;"Fraxinus quadrangulata";87
+1131;"Ligustrum vulgare";87
+1132;"Syringa reticulata";87
+1133;"Syringa villosa";87
+1134;"Syringa vulgaris";87
+1135;"Syringa x prestoniae";87
+1136;"Circaea alpina";88
+1137;"Circaea canadensis ssp. canadensis";88
+1138;"Chamerion angustifolium ssp. angustifolium";88
+1139;"Epilobium ciliatum ssp. ciliatum";88
+1140;"Epilobium coloratum";88
+1141;"Epilobium hirsutum";88
+1142;"Epilobium leptophyllum";88
+1143;"Epilobium parviflorum";88
+1144;"Epilobium strictum";88
+1145;"Oenothera gaura";88
+1146;"Ludwigia palustris";88
+1147;"Oenothera biennis";88
+1148;"Oenothera fruticosa ssp. tetragona";88
+1149;"Oenothera oakesiana";88
+1150;"Oenothera parviflora";88
+1151;"Oenothera perennis";88
+1152;"Oenothera pilosella ssp. pilosella";88
+1153;"Oenothera villosa ssp. villosa";88
+1154;"Matteuccia struthiopteris var. pensylvanica";89
+1155;"Onoclea sensibilis";89
+1156;"Sceptridium dissectum";90
+1157;"Botrychium lanceolatum ssp. angustisegmentum";90
+1158;"Botrychium matricariifolium";90
+1159;"Sceptridium multifidum";90
+1160;"Sceptridium oneidense";90
+1161;"Botrychium simplex";90
+1162;"Botrypus virginianus";90
+1163;"Ophioglossum pusillum";90
+1164;"Aplectrum hyemale";91
+1165;"Arethusa bulbosa";91
+1166;"Calypso bulbosa";91
+1167;"Calopogon tuberosus";91
+1168;"Dactylorhiza viridis";91
+1169;"Corallorhiza maculata";91
+1170;"Corallorhiza striata";91
+1171;"Corallorhiza trifida";91
+1172;"Cypripedium acaule";91
+1173;"Cypripedium arietinum";91
+1174;"Cypripedium parviflorum var. makasin";91
+1175;"Cypripedium parviflorum var. pubescens";91
+1176;"Cypripedium reginae";91
+1177;"Epipactis helleborine";91
+1178;"Galearis spectabilis";91
+1179;"Goodyera pubescens";91
+1180;"Goodyera repens";91
+1181;"Liparis loeselii";91
+1182;"Neottia cordata";91
+1183;"Malaxis monophyllos var. brachypoda";91
+1184;"Platanthera aquilonis";91
+1185;"Platanthera blephariglottis var. blephariglottis";91
+1186;"Platanthera clavellata";91
+1187;"Platanthera flava var. herbiola";91
+1188;"Platanthera hookeri";91
+1189;"Platanthera huronensis";91
+1190;"Platanthera hyperborea";91
+1191;"Platanthera lacera";91
+1192;"Platanthera obtusata";91
+1193;"Platanthera psycodes";91
+1194;"Pogonia ophioglossoides";91
+1195;"Spiranthes casei";91
+1196;"Spiranthes cernua";91
+1197;"Spiranthes incurva";91
+1198;"Spiranthes lacera var. gracilis";91
+1199;"Spiranthes lacera var. lacera";91
+1200;"Spiranthes lucida";91
+1201;"Spiranthes magnicamporum";91
+1202;"Spiranthes romanzoffiana";91
+1203;"Agalinis purpurea var. parviflora";92
+1204;"Agalinis purpurea";92
+1205;"Agalinis tenuifolia";92
+1206;"Aureolaria flava";92
+1207;"Aureolaria pedicularia";92
+1208;"Castilleja coccinea";92
+1209;"Conopholis americana";92
+1210;"Epifagus virginiana";92
+1211;"Euphrasia stricta";92
+1212;"Melampyrum lineare";92
+1213;"Orobanche uniflora";92
+1214;"Pedicularis canadensis";92
+1215;"Pedicularis lanceolata";92
+1216;"Osmundastrum cinnamomeum";93
+1217;"Osmunda claytoniana";93
+1218;"Osmunda regalis var. spectabilis";93
+1219;"Oxalis montana";94
+1220;"Oxalis dillenii";94
+1221;"Oxalis stricta";94
+1222;"Paeonia officinalis";95
+1223;"Paeonia suffruticosa";95
+1224;"Adlumia fungosa";96
+1225;"Chelidonium majus";96
+1226;"Corydalis aurea ssp. aurea";96
+1227;"Corydalis intermedia";96
+1228;"Capnoides sempervirens";96
+1229;"Dicentra canadensis";96
+1230;"Dicentra cucullaria";96
+1231;"Lamprocapnos spectabilis";96
+1232;"Fumaria officinalis";96
+1233;"Papaver dubium";96
+1234;"Papaver orientale";96
+1235;"Papaver rhoeas";96
+1236;"Papaver somniferum";96
+1237;"Sanguinaria canadensis";96
+1238;"Stylophorum diphyllum";96
+1239;"Erythranthe geyeri";97
+1240;"Erythranthe moschata";97
+1241;"Mimulus ringens";97
+1242;"Phryma leptostachya";97
+1243;"Abies balsamea";98
+1244;"Larix decidua";98
+1245;"Larix laricina";98
+1246;"Larix x pendula";98
+1247;"Picea abies";98
+1248;"Picea glauca";98
+1249;"Picea mariana";98
+1250;"Picea pungens";98
+1251;"Pinus banksiana";98
+1252;"Pinus nigra";98
+1253;"Pinus resinosa";98
+1254;"Pinus strobus";98
+1255;"Pinus sylvestris";98
+1256;"Pseudotsuga menziesii var. glauca";98
+1257;"Tsuga canadensis";98
+1258;"Antirrhinum majus";99
+1259;"Misopates orontium";99
+1260;"Callitriche palustris";99
+1261;"Chaenorhinum minus ssp. minus";99
+1262;"Chelone glabra";99
+1263;"Chelone obliqua";99
+1264;"Cymbalaria muralis";99
+1265;"Digitalis lanata";99
+1266;"Gratiola neglecta";99
+1267;"Hippuris vulgaris";99
+1268;"Kickxia elatine";99
+1269;"Nuttallanthus canadensis";99
+1270;"Linaria dalmatica ssp. dalmatica";99
+1271;"Linaria vulgaris";99
+1272;"Penstemon digitalis";99
+1273;"Penstemon hirsutus";99
+1274;"Plantago arenaria";99
+1275;"Plantago lanceolata";99
+1276;"Plantago major";99
+1277;"Plantago media";99
+1278;"Plantago rugelii";99
+1279;"Veronica americana";99
+1280;"Veronica anagallis-aquatica";99
+1281;"Veronica arvensis";99
+1282;"Veronica austriaca";99
+1283;"Veronica chamaedrys";99
+1284;"Veronica filiformis";99
+1285;"Veronica longifolia";99
+1286;"Veronica officinalis";99
+1287;"Veronica peregrina ssp. peregrina";99
+1288;"Veronica persica";99
+1289;"Veronica scutellata";99
+1290;"Veronica serpyllifolia ssp. serpyllifolia";99
+1291;"Veronica verna";99
+1292;"Veronicastrum virginicum";99
+1293;"Platanus occidentalis";100
+1294;"Platanus x hispanica";100
+1295;"Agropyron cristatum";101
+1296;"Agrostis gigantea";101
+1297;"Agrostis perennans";101
+1298;"Agrostis scabra";101
+1299;"Agrostis stolonifera";101
+1300;"Alopecurus aequalis";101
+1301;"Alopecurus geniculatus";101
+1302;"Alopecurus pratensis";101
+1303;"Ammophila breviligulata";101
+1304;"Andropogon gerardii";101
+1305;"Anthoxanthum odoratum";101
+1306;"Apera spica-venti";101
+1307;"Arrhenatherum elatius";101
+1308;"Avena fatua";101
+1309;"Avena sativa";101
+1310;"Beckmannia syzigachne";101
+1311;"Bouteloua curtipendula";101
+1312;"Brachyelytrum aristosum";101
+1313;"Brachyelytrum erectum";101
+1314;"Briza media";101
+1315;"Bromus briziformis";101
+1316;"Bromus ciliatus";101
+1317;"Bromus commutatus";101
+1318;"Bromus danthoniae";101
+1319;"Bromus hordeaceus ssp. hordeaceus";101
+1320;"Bromus inermis";101
+1321;"Bromus japonicus";101
+1322;"Bromus kalmii";101
+1323;"Bromus latiglumis";101
+1324;"Bromus porteri";101
+1325;"Bromus pubescens";101
+1326;"Bromus racemosus";101
+1327;"Bromus secalinus";101
+1328;"Bromus sterilis";101
+1329;"Bromus tectorum";101
+1330;"Calamagrostis canadensis";101
+1331;"Calamagrostis epigeios";101
+1332;"Calamagrostis stricta ssp. inexpansa";101
+1333;"Cenchrus longispinus";101
+1334;"Cinna arundinacea";101
+1335;"Cinna latifolia";101
+1336;"Cynosurus cristatus";101
+1337;"Cynodon dactylon";101
+1338;"Dactylis glomerata";101
+1339;"Danthonia spicata";101
+1340;"Deschampsia cespitosa ssp. parviflora";101
+1341;"Avenella flexuosa";101
+1342;"Digitaria ischaemum";101
+1343;"Digitaria sanguinalis";101
+1344;"Echinochloa crus-galli";101
+1345;"Echinochloa muricata var. microstachya";101
+1346;"Eleusine indica";101
+1347;"Elymus canadensis";101
+1348;"Elymus hystrix";101
+1349;"Elymus repens";101
+1350;"Elymus riparius";101
+1351;"Elymus trachycaulus";101
+1352;"Elymus villosus";101
+1353;"Elymus virginicus var. virginicus";101
+1354;"Elymus wiegandii";101
+1355;"Eragrostis cilianensis";101
+1356;"Eragrostis frankii";101
+1357;"Eragrostis hypnoides";101
+1358;"Eragrostis minor";101
+1359;"Eragrostis pectinacea var. pectinacea";101
+1360;"Eragrostis spectabilis";101
+1361;"Lolium arundinaceum";101
+1362;"Festuca filiformis";101
+1363;"Lolium pratense";101
+1364;"Festuca rubra ssp. rubra";101
+1365;"Festuca subverticillata";101
+1366;"Festuca trachyphylla";101
+1367;"Glyceria borealis";101
+1368;"Glyceria canadensis";101
+1369;"Glyceria grandis";101
+1370;"Glyceria maxima";101
+1371;"Glyceria septentrionalis";101
+1372;"Glyceria striata";101
+1373;"Anthoxanthum nitens ssp. nitens";101
+1374;"Holcus lanatus";101
+1375;"Hordeum jubatum ssp. jubatum";101
+1376;"Hordeum vulgare";101
+1377;"Leersia oryzoides";101
+1378;"Leersia virginica";101
+1379;"Lolium perenne";101
+1380;"Milium effusum";101
+1381;"Miscanthus sacchariflorus";101
+1382;"Miscanthus sinensis";101
+1383;"Muhlenbergia asperifolia";101
+1384;"Muhlenbergia frondosa";101
+1385;"Muhlenbergia glomerata";101
+1386;"Muhlenbergia mexicana var. filiformis";101
+1387;"Muhlenbergia mexicana var. mexicana";101
+1388;"Muhlenbergia schreberi";101
+1389;"Oryzopsis asperifolia";101
+1390;"Piptatheropsis pungens";101
+1391;"Patis racemosa";101
+1392;"Dichanthelium acuminatum ssp. acuminatum";101
+1393;"Dichanthelium acuminatum ssp. lindheimeri";101
+1394;"Panicum capillare";101
+1395;"Dichanthelium acuminatum ssp. implicatum";101
+1396;"Panicum dichotomiflorum";101
+1397;"Panicum flexile";101
+1398;"Panicum philadelphicum ssp. gattingeri";101
+1399;"Dichanthelium latifolium";101
+1400;"Dichanthelium linearifolium";101
+1401;"Panicum miliaceum";101
+1402;"Dichanthelium oligosanthes ssp. oligosanthes";101
+1403;"Dichanthelium perlongum";101
+1404;"Dichanthelium ovale ssp. villosissimum";101
+1405;"Panicum virgatum";101
+1406;"Dichanthelium xanthophysum";101
+1407;"Phalaris arundinacea";101
+1408;"Phalaris canariensis";101
+1409;"Phleum pratense";101
+1410;"Phragmites australis ssp. americanus";101
+1411;"Phragmites australis ssp. australis";101
+1412;"Poa alsodes";101
+1413;"Poa annua";101
+1414;"Poa bulbosa";101
+1415;"Poa chaixii";101
+1416;"Poa compressa";101
+1417;"Poa saltuensis ssp. languida";101
+1418;"Poa nemoralis";101
+1419;"Poa palustris";101
+1420;"Poa pratensis ssp. pratensis";101
+1421;"Poa saltuensis ssp. saltuensis";101
+1422;"Poa trivialis";101
+1423;"Polypogon monspeliensis";101
+1424;"Puccinellia distans";101
+1425;"Schizachne purpurascens";101
+1426;"Schizachyrium scoparium";101
+1427;"Secale cereale";101
+1428;"Setaria faberi";101
+1429;"Setaria pumila ssp. pumila";101
+1430;"Setaria italica";101
+1431;"Setaria verticillata";101
+1432;"Setaria viridis";101
+1433;"Sorghastrum nutans";101
+1434;"Spartina pectinata";101
+1435;"Sphenopholis intermedia";101
+1436;"Sporobolus compositus var. compositus";101
+1437;"Sporobolus cryptandrus";101
+1438;"Sporobolus neglectus";101
+1439;"Sporobolus vaginiflorus";101
+1440;"Torreyochloa pallida var. fernaldii";101
+1441;"Triticum aestivum";101
+1442;"Zea mays";101
+1443;"Zizania aquatica var. aquatica";101
+1444;"Zizania palustris var. palustris";101
+1445;"Phlox divaricata";102
+1446;"Phlox paniculata";102
+1447;"Phlox subulata";102
+1448;"Polygaloides paucifolia";103
+1449;"Polygala polygama";103
+1450;"Polygala sanguinea";103
+1451;"Polygala senega";103
+1452;"Polygala verticillata";103
+1453;"Fagopyrum esculentum";104
+1454;"Polygonum achoreum";104
+1455;"Persicaria amphibia var. emersa";104
+1456;"Persicaria amphibia";104
+1457;"Persicaria amphibia var. stipulacea";104
+1458;"Polygonum aviculare ssp. depressum";104
+1459;"Fallopia baldschuanica";104
+1460;"Polygonum aviculare ssp. aviculare";104
+1461;"Fallopia cilinodis";104
+1462;"Fallopia convolvulus";104
+1463;"Reynoutria japonica var. japonica";104
+1464;"Polygonum douglasii";104
+1465;"Persicaria hydropiper";104
+1466;"Persicaria hydropiperoides";104
+1467;"Persicaria lapathifolia";104
+1468;"Persicaria orientalis";104
+1469;"Persicaria pensylvanica";104
+1470;"Persicaria maculosa";104
+1471;"Persicaria punctata";104
+1472;"Persicaria sagittata";104
+1473;"Fallopia scandens";104
+1474;"Persicaria virginiana";104
+1475;"Reynoutria x bohemica";104
+1476;"Rheum rhabarbarum";104
+1477;"Rumex thyrsiflorus";104
+1478;"Rumex acetosella";104
+1479;"Rumex altissimus";104
+1480;"Rumex crispus";104
+1481;"Rumex dentatus";104
+1482;"Rumex longifolius";104
+1483;"Rumex maritimus";104
+1484;"Rumex obtusifolius";104
+1485;"Rumex britannica";104
+1486;"Rumex patientia";104
+1487;"Rumex triangulivalvis";104
+1488;"Rumex verticillatus";104
+1489;"Polypodium virginianum";105
+1490;"Eichhornia crassipes";106
+1491;"Heteranthera dubia";106
+1492;"Pontederia cordata";106
+1493;"Portulaca grandiflora";107
+1494;"Portulaca oleracea";107
+1495;"Potamogeton amplifolius";108
+1496;"Potamogeton pusillus ssp. tenuissimus";108
+1497;"Potamogeton crispus";108
+1498;"Potamogeton epihydrus";108
+1499;"Stuckenia filiformis ssp. filiformis";108
+1500;"Potamogeton foliosus";108
+1501;"Potamogeton gramineus";108
+1502;"Potamogeton illinoensis";108
+1503;"Potamogeton natans";108
+1504;"Potamogeton nodosus";108
+1505;"Potamogeton oakesianus";108
+1506;"Stuckenia pectinata";108
+1507;"Potamogeton perfoliatus";108
+1508;"Potamogeton praelongus";108
+1509;"Potamogeton pusillus ssp. pusillus";108
+1510;"Potamogeton richardsonii";108
+1511;"Potamogeton spirillus";108
+1512;"Potamogeton strictifolius";108
+1513;"Potamogeton crispus x pusillus";108
+1514;"Potamogeton zosteriformis";108
+1515;"Zannichellia palustris";108
+1516;"Lysimachia arvensis";109
+1517;"Androsace septentrionalis";109
+1518;"Lysimachia ciliata";109
+1519;"Lysimachia clethroides";109
+1520;"Lysimachia nummularia";109
+1521;"Lysimachia punctata";109
+1522;"Lysimachia quadrifolia";109
+1523;"Lysimachia terrestris";109
+1524;"Lysimachia thyrsiflora";109
+1525;"Lysimachia vulgaris";109
+1526;"Lysimachia x producta";109
+1527;"Primula bulleyana";109
+1528;"Primula veris";109
+1529;"Primula vulgaris ssp. rubra";109
+1530;"Samolus parviflorus";109
+1531;"Trientalis borealis";109
+1532;"Adiantum pedatum";110
+1533;"Actaea pachypoda";111
+1534;"Actaea rubra f. neglecta";111
+1535;"Actaea rubra ssp. rubra";111
+1536;"Actaea x ludovici";111
+1537;"Anemone acutiloba";111
+1538;"Anemone americana";111
+1539;"Anemone canadensis";111
+1540;"Anemone cylindrica";111
+1541;"Anemone multifida";111
+1542;"Anemone quinquefolia var. quinquefolia";111
+1543;"Anemone virginiana";111
+1544;"Aquilegia canadensis";111
+1545;"Aquilegia vulgaris";111
+1546;"Caltha palustris";111
+1547;"Actaea racemosa";111
+1548;"Clematis occidentalis var. occidentalis";111
+1549;"Clematis virginiana";111
+1550;"Consolida ajacis";111
+1551;"Coptis trifolia";111
+1552;"Helleborus orientalis";111
+1553;"Myosurus minimus";111
+1554;"Ranunculus abortivus";111
+1555;"Ranunculus acris";111
+1556;"Ranunculus aquatilis var. diffusus";111
+1557;"Ranunculus fascicularis";111
+1558;"Ficaria verna";111
+1559;"Ranunculus flabellaris";111
+1560;"Ranunculus hispidus var. caricetorum";111
+1561;"Ranunculus hispidus var. hispidus";111
+1562;"Ranunculus inundatus";111
+1563;"Ranunculus lingua";111
+1564;"Ranunculus pensylvanicus";111
+1565;"Ranunculus recurvatus var. recurvatus";111
+1566;"Ranunculus repens";111
+1567;"Ranunculus rhomboideus";111
+1568;"Ranunculus sceleratus";111
+1569;"Thalictrum delavayi";111
+1570;"Thalictrum dioicum";111
+1571;"Thalictrum pubescens";111
+1572;"Thalictrum thalictroides";111
+1573;"Trollius europaeus";111
+1574;"Ceanothus americanus";112
+1575;"Ceanothus herbaceus";112
+1576;"Rhamnus alnifolia";112
+1577;"Rhamnus cathartica";112
+1578;"Frangula alnus";112
+1579;"Agrimonia gryposepala";113
+1580;"Agrimonia pubescens";113
+1581;"Alchemilla mollis";113
+1582;"Amelanchier amabilis";113
+1583;"Amelanchier arborea";113
+1584;"Amelanchier laevis";113
+1585;"Amelanchier sanguinea";113
+1586;"Amelanchier spicata";113
+1587;"Amelanchier x grandiflora";113
+1588;"Amelanchier interior";113
+1589;"Aronia melanocarpa";113
+1590;"Chaenomeles japonica";113
+1591;"Cotoneaster acutifolius";113
+1592;"Cotoneaster dammeri";113
+1593;"Crataegus fluviatilis";113
+1594;"Crataegus brainerdii";113
+1595;"Crataegus calpodendron";113
+1596;"Crataegus chrysocarpa var. phoenicea";113
+1597;"Crataegus chrysocarpa var. chrysocarpa";113
+1598;"Crataegus chrysocarpa";113
+1599;"Crataegus populnea";113
+1600;"Crataegus coccinioides";113
+1601;"Crataegus coccinea var. fulleriana";113
+1602;"Crataegus crus-galli";113
+1603;"Crataegus dodgei";113
+1604;"Crataegus flabellata";113
+1605;"Crataegus holmesiana";113
+1606;"Crataegus intricata";113
+1607;"Crataegus macracantha";113
+1608;"Crataegus macrosperma";113
+1609;"Crataegus mollis";113
+1610;"Crataegus monogyna";113
+1611;"Crataegus coccinea var. coccinea";113
+1612;"Crataegus coccinea var. pringlei";113
+1613;"Crataegus pruinosa";113
+1614;"Crataegus punctata";113
+1615;"Crataegus schuettei";113
+1616;"Crataegus submollis";113
+1617;"Crataegus succulenta";113
+1618;"Crataegus x ninae-celottiae";113
+1619;"Rubus repens";113
+1620;"Potentilla indica var. indica";113
+1621;"Filipendula rubra";113
+1622;"Filipendula ulmaria";113
+1623;"Filipendula vulgaris";113
+1624;"Fragaria vesca ssp. americana";113
+1625;"Fragaria virginiana ssp. glauca";113
+1626;"Fragaria virginiana";113
+1627;"Fragaria virginiana ssp. virginiana";113
+1628;"Fragaria x ananassa";113
+1629;"Geum aleppicum";113
+1630;"Geum canadense";113
+1631;"Geum laciniatum";113
+1632;"Geum rivale";113
+1633;"Geum triflorum";113
+1634;"Geum urbanum";113
+1635;"Kerria japonica";113
+1636;"Malus baccata";113
+1637;"Malus coronaria";113
+1638;"Malus prunifolia";113
+1639;"Malus pumila";113
+1640;"Malus x robusta";113
+1641;"Physocarpus opulifolius";113
+1642;"Gillenia trifoliata";113
+1643;"Potentilla anserina ssp. anserina";113
+1644;"Potentilla argentea";113
+1645;"Drymocallis arguta";113
+1646;"Potentilla inclinata";113
+1647;"Potentilla norvegica";113
+1648;"Comarum palustre";113
+1649;"Potentilla supina ssp. paradoxa";113
+1650;"Potentilla pensylvanica";113
+1651;"Potentilla recta";113
+1652;"Potentilla simplex";113
+1653;"Potentilla verna";113
+1654;"Prunus americana";113
+1655;"Prunus avium";113
+1656;"Prunus cerasus";113
+1657;"Prunus domestica";113
+1658;"Prunus glandulosa";113
+1659;"Prunus mahaleb";113
+1660;"Prunus nigra";113
+1661;"Prunus pensylvanica";113
+1662;"Prunus persica";113
+1663;"Prunus pumila var. pumila";113
+1664;"Prunus pumila var. susquehanae";113
+1665;"Prunus serotina";113
+1666;"Prunus spinosa";113
+1667;"Prunus tenella";113
+1668;"Prunus tomentosa";113
+1669;"Prunus virginiana var. virginiana";113
+1670;"Pyrus communis";113
+1671;"Malus toringo";113
+1672;"Rhodotypos scandens";113
+1673;"Rosa blanda";113
+1674;"Rosa canina";113
+1675;"Rosa carolina";113
+1676;"Rosa gallica";113
+1677;"Rosa glauca";113
+1678;"Rosa davurica";113
+1679;"Rosa rubiginosa var. nemoralis";113
+1680;"Rosa multiflora";113
+1681;"Rosa palustris";113
+1682;"Rosa spinosissima";113
+1683;"Rosa rubiginosa var. rubiginosa";113
+1684;"Rosa rugosa";113
+1685;"Rosa setigera";113
+1686;"Rosa virginiana";113
+1687;"Rubus allegheniensis";113
+1688;"Rubus canadensis";113
+1689;"Rubus flagellaris";113
+1690;"Rubus hispidus";113
+1691;"Rubus idaeus ssp. idaeus";113
+1692;"Rubus idaeus ssp. strigosus";113
+1693;"Rubus occidentalis";113
+1694;"Rubus odoratus";113
+1695;"Rubus pensilvanicus";113
+1696;"Rubus phoenicolasius";113
+1697;"Rubus pubescens";113
+1698;"Poterium sanguisorba var. polygamum";113
+1699;"Sorbus americana";113
+1700;"Sorbus aucuparia";113
+1701;"Sorbus intermedia";113
+1702;"Sorbaria sorbifolia";113
+1703;"Spiraea alba";113
+1704;"Spiraea japonica";113
+1705;"Spiraea tomentosa";113
+1706;"Spiraea x vanhouttei";113
+1707;"Geum fragarioides";113
+1708;"Cephalanthus occidentalis";114
+1709;"Galium aparine";114
+1710;"Galium asprellum";114
+1711;"Galium boreale";114
+1712;"Galium circaezans";114
+1713;"Galium labradoricum";114
+1714;"Galium lanceolatum";114
+1715;"Galium mollugo";114
+1716;"Galium obtusum";114
+1717;"Galium odoratum";114
+1718;"Galium palustre";114
+1719;"Galium rivale";114
+1720;"Galium sylvaticum";114
+1721;"Galium tinctorium";114
+1722;"Galium trifidum ssp. trifidum";114
+1723;"Galium triflorum";114
+1724;"Galium verum";114
+1725;"Houstonia caerulea";114
+1726;"Houstonia longifolia";114
+1727;"Mitchella repens";114
+1728;"Sherardia arvensis";114
+1729;"Phellodendron amurense";115
+1730;"Zanthoxylum americanum";115
+1731;"Populus alba";116
+1732;"Populus balsamifera";116
+1733;"Populus deltoides";116
+1734;"Populus grandidentata";116
+1735;"Populus nigra";116
+1736;"Populus nigra var. italica";116
+1737;"Populus simonii";116
+1738;"Populus tremuloides";116
+1739;"Populus x berolinensis";116
+1740;"Populus x canescens";116
+1741;"Populus x canadensis";116
+1742;"Populus x heimburgeri";116
+1743;"Populus x jackii";116
+1744;"Populus x rouleauiana";116
+1745;"Salix alba";116
+1746;"Salix amygdaloides";116
+1747;"Salix aurita";116
+1748;"Salix bebbiana";116
+1749;"Salix candida";116
+1750;"Salix caprea";116
+1751;"Salix cinerea";116
+1752;"Salix cordata";116
+1753;"Salix daphnoides";116
+1754;"Salix discolor";116
+1755;"Salix eriocephala";116
+1756;"Salix interior";116
+1757;"Salix humilis";116
+1758;"Salix lucida";116
+1759;"Salix matsudana";116
+1760;"Salix myricoides";116
+1761;"Salix nigra";116
+1762;"Salix pedicellaris";116
+1763;"Salix pentandra";116
+1764;"Salix petiolaris";116
+1765;"Salix purpurea";116
+1766;"Salix serissima";116
+1767;"Salix triandra";116
+1768;"Salix viminalis";116
+1769;"Salix eriocephala x petiolaris";116
+1770;"Salix x pendulina";116
+1771;"Salix x fragilis";116
+1772;"Salix x sepulcralis";116
+1773;"Salvinia minima";117
+1774;"Comandra umbellata";118
+1775;"Acer campestre";119
+1776;"Acer tataricum ssp. ginnala";119
+1777;"Acer negundo";119
+1778;"Acer platanoides";119
+1779;"Acer pseudoplatanus";119
+1780;"Acer rubrum";119
+1781;"Acer saccharinum";119
+1782;"Acer saccharum ssp. nigrum";119
+1783;"Acer saccharum ssp. saccharum";119
+1784;"Acer spicatum";119
+1785;"Acer tataricum";119
+1786;"Acer x freemanii";119
+1787;"Aesculus glabra";119
+1788;"Aesculus hippocastanum";119
+1789;"Koelreuteria paniculata";119
+1790;"Sarracenia purpurea";120
+1791;"Chrysosplenium americanum";121
+1792;"Mitella diphylla";121
+1793;"Mitella nuda";121
+1794;"Micranthes virginiensis";121
+1795;"Tiarella cordifolia";121
+1796;"Scheuchzeria palustris";122
+1797;"Scrophularia lanceolata";123
+1798;"Scrophularia marilandica";123
+1799;"Scrophularia nodosa";123
+1800;"Verbascum blattaria";123
+1801;"Verbascum lychnitis";123
+1802;"Verbascum phlomoides";123
+1803;"Verbascum thapsus";123
+1804;"Selaginella eclipes";124
+1805;"Ailanthus altissima";125
+1806;"Smilax herbacea";126
+1807;"Smilax tamnoides";126
+1808;"Datura stramonium";127
+1809;"Datura innoxia";127
+1810;"Hyoscyamus niger";127
+1811;"Lycium barbarum";127
+1812;"Solanum lycopersicum";127
+1813;"Nicotiana longiflora";127
+1814;"Nicandra physalodes";127
+1815;"Petunia x atkinsiana";127
+1816;"Physalis alkekengi";127
+1817;"Physalis heterophylla";127
+1818;"Physalis longifolia var. subglabrata";127
+1819;"Physalis virginiana";127
+1820;"Solanum dulcamara";127
+1821;"Solanum melongena";127
+1822;"Solanum nigrum";127
+1823;"Solanum physalifolium";127
+1824;"Solanum ptychanthum";127
+1825;"Solanum rostratum";127
+1826;"Solanum triflorum";127
+1827;"Staphylea trifolia";128
+1828;"Taxus canadensis";129
+1829;"Taxus cuspidata";129
+1830;"Phegopteris connectilis";130
+1831;"Phegopteris hexagonoptera";130
+1832;"Thelypteris noveboracensis";130
+1833;"Thelypteris palustris var. pubescens";130
+1834;"Daphne mezereum";131
+1835;"Dirca palustris";131
+1836;"Triantha occidentalis ssp. brevistyla";132
+1837;"Sparganium americanum";133
+1838;"Sparganium emersum";133
+1839;"Sparganium eurycarpum";133
+1840;"Sparganium natans";133
+1841;"Typha angustifolia";133
+1842;"Typha latifolia";133
+1843;"Typha x glauca";133
+1844;"Ulmus americana";134
+1845;"Ulmus glabra";134
+1846;"Ulmus pumila";134
+1847;"Ulmus rubra";134
+1848;"Ulmus thomasii";134
+1849;"Ulmus glabra x pumila";134
+1850;"Boehmeria cylindrica";135
+1851;"Laportea canadensis";135
+1852;"Parietaria pensylvanica";135
+1853;"Pilea fontana";135
+1854;"Pilea pumila";135
+1855;"Urtica dioica ssp. dioica";135
+1856;"Urtica dioica ssp. gracilis";135
+1857;"Urtica urens";135
+1858;"Verbena bonariensis";136
+1859;"Verbena bracteata";136
+1860;"Verbena hastata";136
+1861;"Verbena simplex";136
+1862;"Verbena stricta";136
+1863;"Verbena urticifolia";136
+1864;"Verbena x engelmannii";136
+1865;"Viola adunca";137
+1866;"Viola sororia var. affinis";137
+1867;"Viola arvensis";137
+1868;"Viola blanda";137
+1869;"Viola canadensis";137
+1870;"Viola labradorica";137
+1871;"Viola cucullata";137
+1872;"Viola macloskeyi";137
+1873;"Viola odorata";137
+1874;"Viola pubescens";137
+1875;"Viola pubescens var. pubescens";137
+1876;"Viola pubescens var. scabriuscula";137
+1877;"Viola renifolia";137
+1878;"Viola rostrata";137
+1879;"Viola sagittata var. ovata";137
+1880;"Viola selkirkii";137
+1881;"Viola sororia var. sororia";137
+1882;"Viola tricolor";137
+1883;"Parthenocissus vitacea";138
+1884;"Parthenocissus quinquefolia";138
+1885;"Parthenocissus tricuspidata";138
+1886;"Vitis aestivalis";138
+1887;"Vitis labrusca";138
+1888;"Vitis riparia";138
+1889;"Athyrium filix-femina var. angustum";139
+1890;"Cystopteris bulbifera";139
+1891;"Cystopteris fragilis";139
+1892;"Cystopteris tenuis";139
+1893;"Deparia acrostichoides";139
+1894;"Diplazium pycnocarpon";139
+1895;"Gymnocarpium dryopteris";139
+1896;"Hemerocallis fulva";140
+1897;"Hemerocallis lilioasphodelus";140

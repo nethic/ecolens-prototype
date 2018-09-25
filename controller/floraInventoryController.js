@@ -3,8 +3,19 @@ const db = require('../model');
 
 module.exports = (app) => {
 
-    app.get('/flora/inventory/list/retrieve', (req, res) => {
-        res.send( { express: 'Flora species list goes here.' } );
+    app.get('/flora/inventory/list/retrieve', async (req, res) => {
+        let listArr = [];
+        await db.floraFamilyList.findAll().then(data => {
+            listArr = data.map(row => {
+                return [row.familyID, row.familyName, []];
+            });
+        });
+        await db.floraSpeciesList.findAll().then(data => {
+            data.forEach(species => {
+                listArr[species.familyID-1][2].push([species.speciesID, species.speciesName]);
+            });
+        });
+        res.send(listArr);
     });
 
     app.post('/flora/inventory/observation', (req, res) => {
