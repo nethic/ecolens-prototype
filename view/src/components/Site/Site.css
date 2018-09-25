@@ -1,62 +1,57 @@
-.accordion {
-    background-color: rgb(162, 180, 162);
-    color: dimgrey;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    border-bottom: solid 1px black;
-    font-family: "Muli", sans-serif;
-  }
+input {
+  width: 30%;
+  height: 35px;
+  margin: 10px 0 10px 0;
+  background-color:rgb(162, 180, 162);
+  color: lightgrey;
+  border: solid 1px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(1, 88, 1);
   
-  .active,
-  .accordion:hover {
-    background-color: rgb(162, 180, 162);
-    border-color: rgb(1, 88, 1);
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  @font-face {
-    font-family: Aster;
-    src: url(../Aster.otf);
-  }
-  
-  input[type="checkbox"] {
-    appearance: initial;
-    background: gray;
-    width: 18px;
-    height: 18px;
-    border: none;
-    background: gray;
-    position: relative;
-  }
-  input[type="checkbox"]:checked {
-    background: darkgrey;
-  }
-  input[type="checkbox"]:checked:after {
-    /* Heres your symbol replacement - this is a tick in Unicode. */
-    content: "\2713";
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Aster", sans-serif;
-    color: rgb(1, 88, 1);
-    letter-spacing: .2rem;
-    text-align: center;
-  }
+}
 
-  h3 {
-    color: dimgrey;
+input[type=text]:focus {
+  /* outline: 2px solid rgb(1, 88, 1); */
+  outline: none;
+  
+}
+input[type=text]::selection {
+  background-color: dimgrey;
+  
+}
+
+input[type=Password]:focus {
+  /* outline: 2px solid rgb(1, 88, 1); */
+  outline: none;
+}
+
+
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: rgb(1, 88, 1);
+  background-color:dimgrey;
+  padding: 5px; 
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: dimgrey;
+  background-color:rgb(1, 88, 1); 
+}
+
+label {
+  color:  rgb(1, 88, 1);
+  font-family: 'Muli', sans-serif; 
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+      width: 75%;
   }
+}

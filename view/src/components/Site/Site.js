@@ -1,116 +1,84 @@
-import React from "react";
-// import ReactDOM from "react-dom";
+import React, { Component } from 'react';
 
 import "./Site.css";
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemTitle,
-  AccordionItemBody
-} from "react-accessible-accordion";
+const Sites = ["Site1", "Site2", "Site3", "Site4", "Site5"];
 
-// Demo styles, see 'Styles' section below for some notes on use.
-import "react-accessible-accordion/dist/fancy-example.css";
+class Input extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      inputVal: ""
+    }
+    this.changeHandler = this.changeHandler.bind(this)
+  }
+    
+  changeHandler(e) {
+    this.props.parentFunction(e.target.value)
+  }
+  
+  render() {
+    return (
+      <div>
+        <label>{this.props.labelName}</label>
+        <input type={this.props.inputType} id={this.props.id} onChange={this.changeHandler} />
+      </div>
+    )
+  }
+}
 
-function Site() {
-  return (
-    <Accordion>
-        <h2>site location</h2>
-      <AccordionItem>
-        <AccordionItemTitle>
-          <h3>Toronto West</h3>
-        </AccordionItemTitle>
-        <AccordionItemBody>
-          <p>
-            <ul>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">High Park</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Centennial Park</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Colonel Samuel Smith</label>
-              </li>
-            </ul>
-          </p>
-        </AccordionItemBody>
-      </AccordionItem>
-      <AccordionItem>
-        <AccordionItemTitle>
-          <h3>Toronto South</h3>
-        </AccordionItemTitle>
-        <AccordionItemBody>
-          <p>
-            <ul>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-            </ul>
-          </p>
-        </AccordionItemBody>
-      </AccordionItem>
-      <AccordionItem>
-        <AccordionItemTitle>
-          <h3>Toronto East</h3>
-        </AccordionItemTitle>
-        <AccordionItemBody>
-          <p>
-            <ul>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-            </ul>
-          </p>
-        </AccordionItemBody>
-      </AccordionItem>
-      <AccordionItem>
-        <AccordionItemTitle>
-          <h3>Toronto North</h3>
-        </AccordionItemTitle>
-        <AccordionItemBody>
-          <p>
-            <ul>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-              <li>
-                <input type="checkbox" id="test2" checked="checked" />
-                <label for="test2">Trinity Bellwoods</label>
-              </li>
-            </ul>
-          </p>
-        </AccordionItemBody>
-      </AccordionItem>
-    </Accordion>
-  );
-};
+class Site extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      newSite: "",
+      existingSite: ""
+    }
+    this.clickHandler = this.clickHandler.bind(this)
+    this.setnewSite = this.setnewSite.bind(this)
+    this.setexistingSite = this.setexistingSite.bind(this)
+  }
+  
+  setnewSite(newSite) {
+    this.setState({newSite: newSite})
+  }
+  
+  setexistingSite(existingSite) {
+    this.setState({existingSite: existingSite})
+  }
+  
+  clickHandler() {
+    // our code here
+    alert(`newSite: ${this.state.newSite} existingSite: ${this.state.existingSite}`)
+  }
+
+
+  render() {
+      return (
+          
+      <div>
+          <label>Input New Site:</label>
+            <Input id ="newSite" inputType="text" placeholder="Input New Site"
+              parentFunction={this.setnewSite}  />
+          <button onClick={this.clickHandler}>    {this.props.buttonName}Submit</button>
+      </div>
+
+      /*<div className="existingSite">
+          <h1>Existing Sites</h1>
+            <div className="container">
+              <div className="row">
+                <div className="col"></div>
+                  <div className="col-10">
+                    <existingSite Sites={Sites}/></div>
+                <div className="col"></div>
+              </div>
+          </div>
+      </div>*/
+            
+     
+
+      );
+    }
+}
 
 export default Site;

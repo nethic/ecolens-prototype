@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 import './App.css';
  import Header from './components/Header/Header.js';
-//  import Login from './components/Login/Login.js';
-// import Site from './components/Site/Site.js';
+//  import HeaderB from './components/HeaderB/HeaderB.js';
+  // import Login from './components/Login/Login.js';
+import Site from './components/Site/Site.js';
 // import Family from './components/Family/Family.js';
  import Footer from './components/Footer/Footer.js';
 // import SignIn from './pages/SignIn/SignIn.js';
 // import Home from './components/Home/Home.js';
+// import Navbar from './components/Navbar/Navbar.js'; 
 
 class App extends Component {
   state = {
@@ -33,8 +35,10 @@ class App extends Component {
     return (
       <div className="App">
       <Header />
+      {/* <Navbar /> */}
+      {/* <HeaderB /> */}
       {/* <Login /> */}
-      {/* <Site /> */}
+      <Site />
       {/* <Family /> */}
        <Footer />
       {/* <SignIn /> */}

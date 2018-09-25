@@ -6,21 +6,24 @@ input {
     color: lightgrey;
     border: solid 1px;
     border-radius: 50%;
+    text-align: center;
+    color: rgb(1, 88, 1);
     
 }
 
-input[type=text]:focus{
-    outline: 2px solid rgb(1, 88, 1);
-
+input[type=text]:focus {
+    /* outline: 2px solid rgb(1, 88, 1); */
+    outline: none;
+    
 }
-input[type=text]:active{
+input[type=text]::selection {
     background-color: dimgrey;
-
+    
 }
 
-input[type=Password]:focus{
-    outline: 2px solid rgb(1, 88, 1);
-
+input[type=Password]:focus {
+    /* outline: 2px solid rgb(1, 88, 1); */
+    outline: none;
 }
 
 
