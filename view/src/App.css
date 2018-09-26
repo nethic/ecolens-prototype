@@ -1,21 +1,89 @@
+body {
+  background-image: url(components/images/forest.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: rgb(210, 212, 210); */
+
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    /* animation: App-logo-spin infinite 20s linear; */
+    /* height: 80px; */
+    /* background-image: url(./components/images/Ecolens-logo-07.png); */
+    height: 9rem;
+    width: 9rem;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: transparent;
   height: 150px;
   padding: 20px;
-  color: white;
+  /* color: white; */
 }
 
 .App-title {
-  font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-family: 'Aster', sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 3rem;
+    animation: fadein 3s;
+    color: lightgrey;
+    /* color: black; */
+    margin: auto;
+    text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.1),
+    2px 2px 0px  rgba(0, 0, 0, 0.1),
+    3px 3px 0px  rgba(0, 0, 0, 0.1),
+    4px 4px 0px  rgba(0, 0, 0, 0.1),
+    5px 5px 0px  rgba(0, 0, 0, 0.1),
+    6px 6px 0px  rgba(0, 0, 0, 0.1),
+    7px 7px 0px  rgba(0, 0, 0, 0.1),
+    8px 8px 0px  rgba(0, 0, 0, 0.1),
+    9px 9px 0px  rgba(0, 0, 0, 0.1),
+    10px 10px 0px rgba(0, 0, 0, 0.1),
+    11px 11px 0px rgba(0, 0, 0, 0.1),
+    12px 12px 0px rgba(0, 0, 0, 0.1),
+    13px 13px 0px rgba(0, 0, 0, 0.1),
+    14px 14px 0px rgba(0, 0, 0, 0.1),
+    15px 15px 0px rgba(0, 0, 0, 0.1),
+    16px 16px 0px rgba(0, 0, 0, 0.1),
+    17px 17px 0px rgba(0, 0, 0, 0.1),
+    18px 18px 0px rgba(0, 0, 0, 0.1),
+    19px 19px 0px rgba(0, 0, 0, 0.1),
+    20px 20px 0px rgba(0, 0, 0, 0.1),
+    21px 21px 0px rgba(0, 0, 0, 0.1),
+    22px 22px 0px rgba(0, 0, 0, 0.1),
+    23px 23px 0px rgba(0, 0, 0, 0.1),
+    24px 24px 0px rgba(0, 0, 0, 0.1),
+    25px 25px 0px rgba(0, 0, 0, 0.1),
+    26px 26px 0px rgba(0, 0, 0, 0.1),
+    27px 27px 10px rgba(0, 0, 0, 0.1),
+    28px 28px 10px rgba(0, 0, 0, 0.1),
+    29px 29px 10px rgba(0, 0, 0, 0.1),
+    30px 30px 10px rgba(0, 0, 0, 0.1)
+    
+  ;
+}
+
+.App-subtitle {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .App-intro {
@@ -25,4 +93,20 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 600px) {
+  .App-title {
+      font-size: 4rem;
+      letter-spacing: 1.5rem;
+  }
+
+  .App-subtitle {
+      font-size: 1.2rem;
+  }
+
+  .App-logo { 
+      width: 8rem;
+      height: 8rem;
+   }
 }

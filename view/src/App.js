@@ -1,37 +1,38 @@
+
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
+import logo from './Ecolens-logo-07.png';
 import './App.css';
+import Authentication from './components/authentication.js';
+import Inventory from './components/Inventory/Inventory.js';
 
 class App extends Component {
+
   state = {
-    response: ''
+    isAuth: false
   };
 
-  componentDidMount() {
-    this.callApi()
-      .then(res => this.setState({ response: res.express }))
-      .catch(err => console.log(err));
+  checkAuth = (status) => {
+    this.setState({ isAuth: status });
   }
 
-  callApi = async () => {
-    const response = await fetch('/test');
-    const body = await response.json();
-
-    if (response.status !== 200) throw Error(body.message);
-
-    return body;
-  };
-  
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">EcoLens</h1>
+          <h2 className="App-subtitle">an ecological field data collection</h2>
         </header>
-        <p className="App-intro">{this.state.response}</p>
+        <Router>
+          <div>
+            {!this.state.isAuth && <Route exact path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
+            {this.state.isAuth && <Route exact path="/" render={(props) => <Inventory {...props} />} />}
+          </div>
+        </Router>
       </div>
-    );
+    )
   }
 }
 
