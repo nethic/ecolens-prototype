@@ -1,6 +1,7 @@
 
 require('dotenv').config();
 const port = process.env.PORT || 3001;
+const crypt = require('argon2');
 const db = require('./model');
 const bparse = require('body-parser');
 const express = require('express');
@@ -10,7 +11,9 @@ app.use(bparse.urlencoded({ extended: true }));
 app.use(bparse.text());
 app.use(bparse.json());
 
-require('./controller/homeController')(app);
+
+require('./controller/authController')(app, crypt,db);
+
 require('./controller/projectsController')(app);
 require('./controller/floraInventoryController')(app);
 
