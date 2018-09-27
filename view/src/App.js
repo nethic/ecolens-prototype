@@ -6,6 +6,7 @@ import logo from './Ecolens-logo-07.png';
 import './App.css';
 import Authentication from './components/authentication.js';
 import Inventory from './components/Inventory/Inventory.js';
+import Navbar from './components/Navbar/Navbar.js';
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Navbar />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">EcoLens</h1>
@@ -31,6 +33,11 @@ class App extends Component {
             {this.state.isAuth && <Route exact path="/" render={(props) => <Inventory {...props} />} />}
           </div>
         </Router>
+        <footer className="footer">
+                <div className="container">
+                    <span>Copyright ©Ecolens 2018  Created by Ryan,Nodar,Leslie,Matthew </span>
+                </div>
+            </footer>
       </div>
     )
   }
