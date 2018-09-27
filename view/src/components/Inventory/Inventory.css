@@ -1,18 +1,75 @@
 .container-fluid {
-    width: 60%;
-    background-color: black;
-    opacity: .4;
-    top: 280px;
+    position: relative;
+    top: 140px;
+    width: 70%;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-family: 'Muli', sans-serif;
 }
 
+.flora-title {
+    color: rgb(162, 180, 162);
+    margin: 20px;
+}
+.form-control {
+    background-color:rgba(162, 180, 162, .8);
+    border: none;
+    margin-top: 0;
+}
+.input-group-text {
+    background-color: rgba(1, 88, 1, .8);
+    border: solid 1px rgb(1, 88, 1);
+}
 .accordion {
-    border-bottom: solid 3px lightgrey;
+    width: 90%;   
+}
+.card-header {
+    /* border-bottom: solid 1px lightgrey; */
+    border-top: solid 1px lightgrey;
+}
+.card {
+    background-color: transparent;
+    color: rgb(162, 180, 162);
+}
+.btn {
+    background-color: transparent;
+    color: lightgrey;
+}
+.card-header .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  
+    content:"\E113";   
+    float: right;        
+    color: lightgrey;        
+    overflow: no-display;
+}
+.card-header .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\E114";
+}
+
+input[type=checkbox]:checked {
+    background-color: rgb(1, 88, 1);
+}
+
+.alphabet {
+    position: absolute;
+    top: 140px;
+    left: 90%;
+    width: 1px;
+    height: 100px;
+    background-color: green;
 }
 
 @media only screen and (max-width: 600px) {
+    .container-fluid {
+        width: 75%;
+        top: 80px;
+    }
     .accordion {
         width: 90%;
-        top: 130px;
+    }
+    .card {
+        width: 90%;
     }
     
 }

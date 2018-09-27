@@ -38,21 +38,28 @@ class Inventory extends React.Component {
 
   render() {
     return (
+      
+      <div className="alphabet">
+        <button>A</button>
+        <button>B</button>
+      </div>
+
       <div className="container-fluid inventory">
 
         <div className="row m-5">
-          <div className="col">
-            <h1>Flora Inventory</h1>
+          <div className="col flora-title">
+            <h3>Flora Inventory</h3>
           </div>
         </div>
 
         <div className="row m-5">
           <div className="col">
             <div className="input-group input-group-lg">
-              <div className="input-group-prepend">
-                <span className="input-group-text bg-success text-white" id="inputGroup-sizing-lg">Search Flora</span>
-              </div>
               <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
+              <div className="input-group-prepend">
+                <span className="input-group-text text-white" id="inputGroup-sizing-lg">Search Flora</span>
+              </div>
+              
             </div>
           </div>
         </div>

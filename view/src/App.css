@@ -73,10 +73,13 @@ body {
 }
 
 .App-subtitle {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Aster', sans-serif;
     font-size: 1.5rem;
+    letter-spacing: .15rem;
     font-weight: bold;
     color: lightgrey;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 @keyframes fadein {
@@ -97,6 +100,13 @@ body {
   font-size: .8rem;
   color:  lightgrey;
   background-color: transparent;
+}
+.alignLeft {
+  float: left;
+  margin-left: 0;
+}
+.alignRight {
+  float: right;
 }
 
 @keyframes App-logo-spin {
