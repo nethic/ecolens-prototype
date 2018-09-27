@@ -18,6 +18,12 @@ class App extends Component {
     this.setState({ isAuth: status });
   }
 
+  handleLogout = () =>{
+    localStorage.removeItem("tkkn");
+    this.setState({isAuth:false});
+    this.forceUpdate();
+  }
+
   render() {
     return (
       <div className="App">
@@ -26,6 +32,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">EcoLens</h1>
           <h2 className="App-subtitle">an ecological field data collection</h2>
+          {this.state.isAuth && <input type='submit' value='logout' onClick={this.handleLogout}/>}
         </header>
         <Router>
           <div>
