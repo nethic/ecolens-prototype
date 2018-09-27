@@ -1,0 +1,18 @@
+.container-fluid {
+    width: 60%;
+    background-color: black;
+    opacity: .4;
+    top: 280px;
+}
+
+.accordion {
+    border-bottom: solid 3px lightgrey;
+}
+
+@media only screen and (max-width: 600px) {
+    .accordion {
+        width: 90%;
+        top: 130px;
+    }
+    
+}
