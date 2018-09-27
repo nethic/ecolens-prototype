@@ -29,7 +29,9 @@ class Inventory extends React.Component {
         break;
       case false:
         axios.delete('/flora/inventory/correction', {
-
+          siteID: this.state.sideID,
+          studyYear: this.state.studyYear,
+          speciesID: checkedSpeciesID
         });
         break;
     }

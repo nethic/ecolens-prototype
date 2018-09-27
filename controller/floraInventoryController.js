@@ -40,7 +40,9 @@ module.exports = (app) => {
     app.delete('/flora/inventory/correction', (req, res) => {
         db.floraInventory.destroy({
             where: {
-                recordID: req.body.recordID
+                siteID: req.body.sideID,
+                studyYear: req.body.studyYear,
+                speciesID: req.body.SpeciesID
             }
         }).then( () => {
             res.end();
