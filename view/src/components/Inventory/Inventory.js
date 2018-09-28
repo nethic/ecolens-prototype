@@ -71,6 +71,7 @@ class Inventory extends React.Component {
 
         </div>
 
+
         <div className="row m-5">
           <div className="col flora-title">
             <h3>Flora Inventory</h3>

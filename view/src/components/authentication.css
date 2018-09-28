@@ -9,14 +9,13 @@ html, body {
     src: url(./Aster.otf);
 }
 
-form {
+#authenform {
     position: relative;
     top: 200px;
     width: 25%;
     height: 250px;
     margin: auto;
     background-color:rgba(0, 0, 0, 0.5);
-    /* opacity: .6; */
     font-family: 'Muli', sans-serif;
 }
 
@@ -31,7 +30,7 @@ form {
     padding: 20px 0;
 }
 
-label {
+#authenlogin {
     width: 80%;
     margin: auto; 
 }
@@ -139,7 +138,7 @@ label {
 
 
 @media only screen and (max-width: 600px) {
-    form {
+    #authenform {
         width: 70%;
         top: 110px;
     }

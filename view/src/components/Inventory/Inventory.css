@@ -50,12 +50,15 @@
     transform: translate(0px, -10px);  
 }
 
+#accordion {
+    width: 100%;
+}
+
 .accordion {
-    width: 90%;   
+    width: 100%;   
 }
 
 .card-header {
-    /* border-bottom: solid 1px lightgrey; */
     border-top: solid 1px lightgrey;
 }
 .card {
@@ -134,17 +137,12 @@ input[type=checkbox]:checked:after {
         width: 75%;
         top: 80px;
     }
-    .accordion {
-        width: 10%;
-    }
-    .card {
-        width: 90%;
-    }
-    .col {
-        width: 90%;
-    }
+    
+    
     .input-group-text {
         margin-top: 10px;
     }
     
 }
+
+
