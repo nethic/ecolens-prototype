@@ -10,3 +10,8 @@ navbar {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.nav-link:hover {
+    color:rgb(1, 88, 1);
+    
+}

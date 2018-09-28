@@ -34,11 +34,10 @@ class App extends Component {
           </div>
         </Router>
         <footer className="footer">
-                <div className="container">
-                    <p className="alignLeft">Copyright ©Ecolens 2018</p>
-                    <p className="alignRight">  Created by Ryan,Nodar,Leslie,Matthew </p>
-                </div>
-            </footer>
+          <div className="container">
+            <p className="alignLeft">Copyright ©Ecolens 2018</p>
+          </div>
+        </footer>
       </div>
     )
   }
