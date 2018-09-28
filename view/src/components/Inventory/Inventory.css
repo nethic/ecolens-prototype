@@ -105,7 +105,7 @@ input[type=checkbox]:checked:after {
 
 .letters {
     padding: 0px;
-    margin: 0px;
+    margin: 0;
     background-color: transparent;
     color: lightgrey;
     outline: none;
@@ -117,8 +117,9 @@ input[type=checkbox]:checked:after {
         background-color: rgb(1, 88, 1)!important;
         font-weight: 700 !important;
         letter-spacing: 3px;
+        color: rgb(162, 180, 162);
         background: none;
-        padding: 1px;
+        padding-left: 2px;
         border-radius: 50%;
         box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
         transition: all 0.3s ease 0s;
