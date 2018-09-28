@@ -16,9 +16,13 @@ class Projects extends React.Component {
     });
   }
 
-handleNewSite(event) {
-    this.setState({ siteID: event.target.id });
-}
+    handleNewSite(event) {
+        this.setState({ siteID: event.target.id });
+    }
+
+    loadSite = () => {
+        axios.get('/flora/inventory/')
+    }
 
   render() {
     return (
@@ -34,7 +38,7 @@ handleNewSite(event) {
                     <h2 className="m-5">Existing Sites</h2>
                         {
                             this.state.siteList.map(site => {
-                                return <button className="btn btn-success my-2" id={site.siteID} key={site.siteID}>{site.siteName}</button>
+                                return <button className="btn btn-success my-2" id={site.siteID} key={site.siteID} onClick={this.loadSite}>{site.siteName}</button>
                             })
                         }
                     </div>

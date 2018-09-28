@@ -38,6 +38,7 @@ class Inventory extends React.Component {
   }
 
   render() {
+    console.log("Inventory");
     return (
       <div className="container-fluid inventory">
 
