@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import "./authentication.css";
 
 class Authentication extends React.Component {
 
@@ -8,8 +9,6 @@ class Authentication extends React.Component {
         this.state = {
             user: '',
             pass: '',
-            response: '',
-            authRes: '',
             token: '',
             isAuth: false,
         };
@@ -29,7 +28,7 @@ class Authentication extends React.Component {
             });
             this.callApi('/token', data)
                 .then(res => {
-                    this.setState({ authRes: res.message, isAuth: res.ans });
+                    this.setState({ isAuth: res.ans });
                     this.props.checkAuth(res.ans);
                 })
                 .catch(err => console.log(err));
@@ -99,11 +98,11 @@ class Authentication extends React.Component {
             pass: this.state.pass
         })
 
-        alert('A name was submitted: ' + this.state.user + ' also a password.. opsie: ' + this.state.pass);
+        
         this.callApi('/auth/login', data).then(res => {
             let token = res.token
             localStorage.setItem('tkkn', token);
-            this.setState({ token: token, authRes: res.message, isAuth: res.ans });
+            this.setState({ token: token, isAuth: res.ans });
             this.props.checkAuth(res.ans);
         });
         event.preventDefault();
@@ -122,8 +121,8 @@ class Authentication extends React.Component {
             pass: this.state.pass
         });
 
-        alert('A name was submitted: ' + this.state.user + ' also a password.. opsie: ' + this.state.pass);
-        this.callApi('/auth/signup', data).then(res => this.setState({ authRes: res.message }));
+        
+        this.callApi('/auth/signup', data);
         event.preventDefault();
 
     }
@@ -131,6 +130,7 @@ class Authentication extends React.Component {
     render() {
         return (
             <form>
+                <p className="instructions">User Login</p>
                 <p className="App-intro">{this.state.response}</p>
                 <p className="App-intro">{this.state.authRes}</p>
                 <label>
