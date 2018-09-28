@@ -13,16 +13,16 @@ class SpeciesFamily extends React.Component {
             </button>
           </div>
 
-          <div id={this.props.family[1]} className="collapse hide" aria-labelledby={this.props.family[1]+"heading"} data-parent="#accordion">
-            <div className="card-body d-flex flex-column">
-              {
-                this.props.family[2].map(species => {
-                  return <Species species={species} key={species[0]} handleSpeciesCheck={this.props.handleSpeciesCheck} />
-                })
-              }
-            </div>
+        <div id={this.props.family[1]} className="collapse hide" aria-labelledby={this.props.family[1] + "heading"} data-parent="#accordion">
+          <div className="card-body d-flex flex-column">
+            {
+              this.props.family[2].map(species => {
+                return <Species species={species} key={species[0]} handleSpeciesCheck={this.props.handleSpeciesCheck} />
+              })
+            }
           </div>
         </div>
+      </div>
     )
   }
 }
