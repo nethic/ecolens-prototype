@@ -27,12 +27,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">EcoLens</h1>
           <h2 className="App-subtitle">an ecological field data collection</h2>
-          {this.state.isAuth && <input type='submit' value='logout' onClick={this.handleLogout}/>}
+          {this.state.isAuth && <input id="logout" type='submit' value='LogOut' onClick={this.handleLogout}/>}
         </header>
         <Router>
           <div>

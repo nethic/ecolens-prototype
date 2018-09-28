@@ -143,5 +143,8 @@ input[type=checkbox]:checked:after {
     .col {
         width: 90%;
     }
+    .input-group-text {
+        margin-top: 10px;
+    }
     
 }

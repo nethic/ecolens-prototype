@@ -6,7 +6,7 @@ class Navbar extends Component {
     render() {
         return (
             
-          <nav className="navbar fixed-top  style=transparent">
+          <nav className="navbar fixed-top style=transparent">
       
             
               <ul className="navbar-nav mr-auto">

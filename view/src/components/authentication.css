@@ -82,7 +82,7 @@ label {
     border: solid 3px rgb(1, 88, 1);
 }
 
-input[type="submit"] {
+#signup {
     width: 30%;
     height: 35px;
     margin: 20px 10px;
@@ -98,13 +98,40 @@ input[type="submit"] {
     text-decoration: none;
 }
 
-input[type="submit"]:active {
+#signup:active {
     top:0.1em;
 }
-input[type="submit"]:focus {
+#signup:focus {
     outline: black;  
 }
-input[type="submit"]:hover {
+#signup:hover {
+    box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.4);
+    transform: translate(0px, -10px);  
+}
+
+#submit {
+    width: 30%;
+    height: 35px;
+    margin: 20px 10px;
+    background-color:rgb(1, 88, 1);
+    color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    text-decoration: none;
+}
+
+#submit:active {
+    top:0.1em;
+}
+#submit:focus {
+    outline: black;  
+}
+#submit:hover {
     /* color: rgb(162, 180, 162); */
     box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.4);
     transform: translate(0px, -10px);  

@@ -139,8 +139,8 @@ class Authentication extends React.Component {
                     <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
                 </label>
                 <br />
-                <input type="submit" value="Submit" onClick={this.handleSubmit} />
-                <input type="submit" value="Signup" onClick={this.handleSignup} />
+                <input id="submit" type="submit" value="Submit" onClick={this.handleSubmit} />
+                <input id="signup" type="submit" value="Signup" onClick={this.handleSignup} />
             </form>
         );
     }
