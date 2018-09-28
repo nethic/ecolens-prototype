@@ -70,6 +70,9 @@
 .btn:focus {
     background-color: transparent;
     color: lightgrey;
+    outline: none;  
+}
+.btn:active {
     outline: none;
 }
 
