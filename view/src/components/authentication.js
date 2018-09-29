@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./authentication.css";
+
 class Authentication extends React.Component {
 
   constructor(props) {
