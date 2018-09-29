@@ -129,18 +129,18 @@ class Authentication extends React.Component {
 
     render() {
         return (
-            <form>
+            <form id="authenform">
                 <p className="instructions">User Login</p>
                 <p className="App-intro">{this.state.response}</p>
                 <p className="App-intro">{this.state.authRes}</p>
-                <label>
+                <label id="authenlogin">
                     <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
                     <br />
                     <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
                 </label>
                 <br />
-                <input type="submit" value="Submit" onClick={this.handleSubmit} />
-                <input type="submit" value="Signup" onClick={this.handleSignup} />
+                <input id="submit" type="submit" value="Submit" onClick={this.handleSubmit} />
+                <input id="signup" type="submit" value="Signup" onClick={this.handleSignup} />
             </form>
         );
     }
