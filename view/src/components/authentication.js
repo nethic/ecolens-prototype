@@ -66,7 +66,7 @@ class Authentication extends React.Component {
         if (responseSign.status !== 200) throw Error(bodySign.message);
 
         return bodySign;
-        
+
       case '/token':
         var tokenRes = await fetch(route, {
           method: 'POST',
@@ -98,7 +98,6 @@ class Authentication extends React.Component {
       pass: this.state.pass
     })
 
-    alert('A name was submitted: ' + this.state.user + ' also a password.. opsie: ' + this.state.pass);
     this.callApi('/auth/login', data).then(res => {
       let token = res.token
       localStorage.setItem('tkkn', token);
@@ -120,24 +119,24 @@ class Authentication extends React.Component {
       pass: this.state.pass
     });
 
-    alert('A name was submitted: ' + this.state.user + ' also a password.. opsie: ' + this.state.pass);
     this.callApi('/auth/signup', data).then(res => this.setState({ authRes: res.message }));
     event.preventDefault();
   }
 
   render() {
     return (
-      <form>
+      <form id="authenform">
+        <p className="instructions">User Login</p>
         <p className="App-intro">{this.state.response}</p>
         <p className="App-intro">{this.state.authRes}</p>
-        <label>
+        <label id="authenlogin">
           <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
           <br />
           <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
         </label>
         <br />
-        <input type="submit" value="Submit" onClick={this.handleSubmit} />
-        <input type="submit" value="Signup" onClick={this.handleSignup} />
+        <input id="submit" type="submit" value="Submit" onClick={this.handleSubmit} />
+        <input id="signup" type="submit" value="Signup" onClick={this.handleSignup} />
       </form>
     );
   }
