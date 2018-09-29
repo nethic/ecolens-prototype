@@ -8,7 +8,7 @@ class Species extends React.Component {
     isChecked: false
   }
 
-  componentWillMount() {
+  componentDidMount() {
     if (this.props.savedInventory[this.props.species[0]]) {
       this.setState({ isChecked: true });
     }

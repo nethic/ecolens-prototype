@@ -6,21 +6,36 @@ import axios from "axios";
 class SiteOverview extends React.Component {
 
     state = {
-        yearList: []
+        yearList: [],
+        yearToAdd: 0
     }
 
-    async componentDidMount() {
-        await axios.get('/site/years/view', {
+    componentDidMount() {
+        this.getYearList();
+    }
+
+    getYearList = () => {
+        axios.get('/site/years/view', {
             params: {
                 siteID: this.props.siteID
             }
         }).then(res => {
-            this.setState({ yearList: res.data });
+            let yearArr = res.data.map(year => {
+                return year.DISTINCT;
+            });
+            this.setState({ yearList: yearArr });
         });
     }
 
-    handleNewYear = () => {
-        // something
+    handleYearInput = (event) => {
+        this.setState({ yearToAdd: event.target.value });
+    }
+
+    handleAddYear = (event) => {
+        event.preventDefault();
+        this.setState(prevState => ({
+            yearList: [...prevState.yearList, this.state.yearToAdd]
+        }));
     }
 
     render() {
@@ -30,14 +45,15 @@ class SiteOverview extends React.Component {
                     <div className="col">
                         <form className="">
                             <div className="form-group d-flex flex-row m-5">
-                                <button className="btn btn-success">Add Current Year</button>
+                                <input type="" className="form-control" id="newYear" aria-describedby="newYear" placeholder="Enter a new study year" value={this.state.value} onChange={this.handleYearInput} />
+                                <button className="btn btn-success" onClick={this.handleAddYear}>Add Year</button>
                             </div>
                             <div className="d-flex flex-column m-5">
                                 <h2 className="">Study Years</h2>
                                 {
                                     this.state.yearList.map(year => {
-                                        return <Link to="/inventory" key={this.props.siteID+"-"+year.DISTINCT} className="w-50">
-                                            <button className="btn btn-success my-2 w-100" id={year.DISTINCT} key={year.DISTINCT}>{year.DISTINCT}</button>
+                                        return <Link to="/inventory" key={this.props.siteID + "-" + year} className="w-50">
+                                            <button className="btn btn-success my-2 w-100" id={year} key={year} onClick={this.props.loadInventory}>{year}</button>
                                         </Link>
                                     })
                                 }

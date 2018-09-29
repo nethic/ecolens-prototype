@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from "axios";
 // import './App.css';
 import Authentication from './components/Authentication.js';
 import Sites from './components/Projects/Sites.js';
@@ -13,7 +14,8 @@ class App extends Component {
   state = {
     isAuth: false,
     siteID: 1,
-    studyYear: 2017
+    studyYear: 2017,
+    savedInventory: {}
   };
 
   checkAuth = (status) => {
@@ -34,6 +36,25 @@ class App extends Component {
     this.setState({ studyYear: event.target.id });
   }
 
+  loadInventory = async (event) => {
+    await this.handleStudyYear(event);
+    await axios.get('/site/year/load', {
+      params: {
+        siteID: this.state.siteID,
+        studyYear: this.state.studyYear
+      }
+    }).then(res => {
+      res.data.forEach(record => {
+        this.setState(prevState => ({
+          savedInventory: {
+            ...prevState.savedInventory,
+            [record.speciesID]: true
+          }
+        }));
+      });
+    });
+  }
+
   render() {
     return (
       <Router>
@@ -45,8 +66,8 @@ class App extends Component {
               this.state.isAuth &&
               <div>
                 <Route exact path="/" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
-                <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} />} />
-                <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} />} />
+                <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
+                <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} savedInventory={this.state.savedInventory} />} />
               </div>
             }
           </div>

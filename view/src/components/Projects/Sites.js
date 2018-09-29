@@ -37,7 +37,7 @@ class Sites extends React.Component {
                                 <button className="btn btn-success" onClick={this.handleAddSite}>Add Site</button>
                             </div>
                             <div className="d-flex flex-column m-5">
-                                <h2 className="">Existing Sites</h2>
+                                <h2 className="">Study Sites</h2>
                                 {
                                     this.state.siteList.map(site => {
                                         return <Link to="/site" key={site.siteID} className="w-50">
