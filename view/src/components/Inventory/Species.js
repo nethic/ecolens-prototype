@@ -5,9 +5,13 @@ import axios from "axios";
 
 class Species extends React.Component {
   state = {
-    isChecked: false,
-    siteID: 1,
-    studyYear: 2017
+    isChecked: false
+  }
+
+  componentWillMount() {
+    if (this.props.savedInventory[this.props.species[0]]) {
+      this.setState({ isChecked: true });
+    }
   }
 
   handleSpeciesCheck = event => {
@@ -17,16 +21,16 @@ class Species extends React.Component {
     switch (isChecked) {
       case true:
         axios.post('/flora/inventory/observation', {
-          siteID: this.state.siteID,
-          studyYear: this.state.studyYear,
+          siteID: this.props.siteID,
+          studyYear: this.props.studyYear,
           speciesID: checkedSpeciesID
         });
         break;
       case false:
         axios.delete('/flora/inventory/correction', {
           data: {
-            siteID: this.state.siteID,
-            studyYear: this.state.studyYear,
+            siteID: this.props.siteID,
+            studyYear: this.props.studyYear,
             speciesID: checkedSpeciesID
           }
         });

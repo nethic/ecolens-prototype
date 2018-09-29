@@ -19,6 +19,10 @@ class SiteOverview extends React.Component {
         });
     }
 
+    handleNewYear = () => {
+        // something
+    }
+
     render() {
         return (
             <div className="container-fluid">
@@ -32,8 +36,8 @@ class SiteOverview extends React.Component {
                                 <h2 className="">Study Years</h2>
                                 {
                                     this.state.yearList.map(year => {
-                                        return <Link to="/inventory" key={this.props.siteID+"-"+year.DISTINCT}>
-                                            <button className="btn btn-success my-2 w-50" id={year.DISTINCT} key={year.DISTINCT}>{year.DISTINCT}</button>
+                                        return <Link to="/inventory" key={this.props.siteID+"-"+year.DISTINCT} className="w-50">
+                                            <button className="btn btn-success my-2 w-100" id={year.DISTINCT} key={year.DISTINCT}>{year.DISTINCT}</button>
                                         </Link>
                                     })
                                 }

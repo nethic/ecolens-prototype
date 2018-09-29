@@ -7,8 +7,6 @@ class Sites extends React.Component {
 
     state = {
         siteList: [],
-        siteID: 1,
-        studyYear: 2017,
         siteToAdd: ''
     }
 
@@ -42,8 +40,8 @@ class Sites extends React.Component {
                                 <h2 className="">Existing Sites</h2>
                                 {
                                     this.state.siteList.map(site => {
-                                        return <Link to="/site" key={site.siteID}>
-                                            <button className="btn btn-success my-2 w-50" id={site.siteID} key={site.siteID} onClick={this.props.handleSiteID}>{site.siteName}</button>
+                                        return <Link to="/site" key={site.siteID} className="w-50">
+                                            <button className="btn btn-success my-2 w-100" id={site.siteID} key={site.siteID} onClick={this.props.handleSiteID}>{site.siteName}</button>
                                         </Link>
                                     })
                                 }

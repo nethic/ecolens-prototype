@@ -39,9 +39,7 @@ class App extends Component {
       <Router>
         <div className="App">
           {this.state.isAuth && <Navbar handleLogout={this.handleLogout} />}
-          <header className="App-header">
-          </header>
-          <div>
+          <div className="container-fluid">
             {!this.state.isAuth && <Route path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
             {
               this.state.isAuth &&
@@ -52,8 +50,7 @@ class App extends Component {
               </div>
             }
           </div>
-          <footer className="footer">
-          </footer>
+          <footer className="footer"></footer>
         </div>
       </Router>
     )

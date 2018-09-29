@@ -7,10 +7,8 @@ import SpeciesFamily from "./Family.js";
 class Inventory extends React.Component {
 
   state = {
-    siteID: 1,
-    studyYear: 2017,
     inventoryList: [],
-    savedInventory: []
+    savedInventory: {}
   }
 
   async componentDidMount() {
@@ -19,11 +17,19 @@ class Inventory extends React.Component {
     });
     await axios.get('/site/year/load', {
       params: {
-        siteID: this.state.siteID,
-        studyYear: this.state.studyYear
+        siteID: this.props.siteID,
+        studyYear: this.props.studyYear
       }
     }).then(res => {
-      this.setState({ savedInventory: res.data });
+      res.data.forEach(record => {
+        this.setState(prevState => ({
+          savedInventory: {
+              ...prevState.savedInventory,
+              [record.speciesID]: true
+          }
+      }));
+      });
+      console.log(this.state.savedInventory);
     });
   }
 
@@ -53,7 +59,7 @@ class Inventory extends React.Component {
             <div id="accordion">
               {
                 this.state.inventoryList.map(family => {
-                  return <SpeciesFamily family={family} key={family[0]} savedInventory={this.state.savedInventory} />
+                  return <SpeciesFamily family={family} key={family[0]} savedInventory={this.state.savedInventory} siteID={this.props.siteID} studyYear={this.props.studyYear} />
                 })
               }
             </div>
