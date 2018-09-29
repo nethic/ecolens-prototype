@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import axios from "axios";
 // import './App.css';
-import Authentication from './components/Authentication.js';
+import Authentication from './components/authentication.js';
 import Sites from './components/Projects/Sites.js';
 import SiteOverview from './components/Projects/SiteOverview';
 import Inventory from './components/Inventory/Inventory.js';
@@ -71,7 +71,7 @@ class App extends Component {
               </div>
             }
           </div>
-          <footer className="footer"></footer>
+          <footer className="footer">Copyright © 2018 EcoLens | Developed by Dirty Hippies</footer>
         </div>
       </Router>
     )

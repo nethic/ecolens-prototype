@@ -152,11 +152,6 @@ class Authentication extends React.Component {
                     <input type="submit" value="Submit" onClick={this.handleSubmit} />
                     <input type="submit" value="Signup" onClick={this.handleSignup} />
                 </form>
-                <footer className="footer">
-                    <div className="container">
-                        <span>Copyright ©EcoLens 2018 | Created by Ryan, Nodar, Leslie, Matthew </span>
-                    </div>
-                </footer>
             </div>
         );
     }

@@ -1,35 +1,17 @@
 navbar {
     font-family: 'Muli', sans-serif;
-    font-size: 15px;
-    height: 10px;
+    font-size: 20px;
+    height: 20px;
     position: fixed;
 }
 
 .nav-link {
     color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color:rgb(1, 88, 1);
     
 }
-
-.dropdown-menu {
-    background-color:rgba(0, 0, 0, 0.5);    
-}
-.dropdown-menu:focus {
-    outline: rgb(1, 88, 1);
-}
-.dropdown-menu:active {
-    outline: rgb(1, 88, 1);
-}
-
-.dropdown-item {
-    color: lightgrey;
-    font-family: 'Muli', sans-serif;
-
-}
-
-@media only screen and (max-width: 600px) {
-    .dropdown-menu {
-        width: 80%;
-        margin: auto;
-    }
-  
-  }

@@ -46,7 +46,7 @@ class Species extends React.Component {
         <form>
           <div className="form-row">
             <div className="col"></div>
-            <div className="col-4 py-3">
+            <div className="col-lg-8 col-md-8 col-sm-4 py-2">
               <label className="form-check-label" htmlFor={this.props.species[1]}>{this.props.species[1]}</label>
             </div>
             <div className="col-1 py-3">
