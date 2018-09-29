@@ -1,0 +1,161 @@
+.container-fluid {
+    position: relative;
+    top: 140px;
+    width: 70%;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-family: 'Muli', sans-serif;
+}
+
+
+
+
+
+.form-check-label{
+    color: lightgrey;
+
+}
+
+
+
+
+
+.flora-title {
+    color: rgb(162, 180, 162);
+    margin: 20px;
+}
+.form-control {
+    background-color:rgba(162, 180, 162, .8);
+    border: none;
+    margin-top: 0;
+    border-radius: 5px;
+
+}
+.form-control:focus {
+    outline: rgb(1, 88, 1);
+    background-color:rgba(162, 180, 162, .8);
+}
+.form-control:active {
+    outline: rgb(1, 88, 1);
+    background-color:rgba(162, 180, 162, .8);
+}
+.form-control:hover {
+    color: dimgrey;
+    border: solid 3px rgb(1, 88, 1);
+}
+
+.input-group-text {
+    background-color: rgba(1, 88, 1, .8);
+    border: solid 1px rgb(1, 88, 1);
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    margin-left: 5px;
+}
+.input-group-text:active {
+    top:0.1em;
+}
+.input-group-text:focus {
+    outline: black;  
+}
+.input-group-text:hover {
+    box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.4);
+    transform: translate(0px, -10px);  
+}
+
+#accordion {
+    width: 100%;
+}
+
+.accordion {
+    width: 100%;   
+}
+
+.card-header {
+    border-top: solid 1px lightgrey;
+}
+.card {
+    background-color: transparent;
+    color: rgb(162, 180, 162);
+}
+
+.btn {
+    background-color: transparent;
+    color: lightgrey;
+}
+.btn:focus {
+    background-color: transparent;
+    color: lightgrey;
+    outline: none;  
+}
+.btn:active {
+    outline: none;
+}
+
+.accordion-toggle:after {
+    /* symbol for "opened" panels */
+    font-family: 'Glyphicons Halflings';  
+    content:"\E113";   
+    float: left;        
+    color: lightgrey;        
+    overflow: no-display;
+}
+.card-header .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\E114";
+}
+
+input[type=checkbox]:checked {
+    background-color: rgb(1, 88, 1);
+}
+input[type=checkbox]:checked:after {
+    background-color: rgb(1, 88, 1);
+}
+
+.alphabet {
+    position: fixed;
+    top: 80px;
+    left: 95%;
+    width: 9px;
+    height: 600px;
+    /* outline: solid black 1px; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.letters {
+    padding: 0px;
+    margin: 0;
+    background-color: transparent;
+    color: lightgrey;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.letters:hover {
+        background-color: rgb(1, 88, 1)!important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        color: rgb(162, 180, 162);
+        background: none;
+        padding-left: 2px;
+        border-radius: 50%;
+        box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        width: 75%;
+        top: 80px;
+    }
+    
+    
+    .input-group-text {
+        margin-top: 10px;
+    }
+    
+}
+
+

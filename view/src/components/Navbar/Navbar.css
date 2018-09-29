@@ -1,0 +1,17 @@
+navbar {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    height: 20px;
+    position: fixed;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color:rgb(1, 88, 1);
+    
+}
