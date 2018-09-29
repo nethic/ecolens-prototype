@@ -1,45 +1,33 @@
+
 import React from "react";
 import axios from "axios";
-import SpeciesFamily from "./SpeciesFamily.js";
-import "./Inventory.css";
+import SpeciesFamily from "./Family.js";
+// import "./Inventory.css";
 
 class Inventory extends React.Component {
 
   state = {
     siteID: 1,
     studyYear: 2017,
-    inventoryList: []
+    inventoryList: [],
+    savedInventory: []
   }
 
   async componentDidMount() {
     await axios.get('/flora/inventory/list/retrieve').then(res => {
       this.setState({ inventoryList: res.data });
     });
-  }
-
-  handleSpeciesCheck = event => {
-    let isChecked = event.target.checked;
-    let checkedSpeciesID = event.target.id;
-    switch (isChecked) {
-      case true:
-        axios.post('/flora/inventory/observation', {
-          siteID: this.state.siteID,
-          studyYear: this.state.studyYear,
-          speciesID: checkedSpeciesID
-        });
-        break;
-      case false:
-        axios.delete('/flora/inventory/correction', {
-          siteID: this.state.sideID,
-          studyYear: this.state.studyYear,
-          speciesID: checkedSpeciesID
-        });
-        break;
-    }
+    await axios.get('/site/year/load', {
+      params: {
+        siteID: this.state.siteID,
+        studyYear: this.state.studyYear
+      }
+    }).then(res => {
+      this.setState({ savedInventory: res.data });
+    });
   }
 
   render() {
-    console.log("Inventory");
     return (
       <div className="container-fluid inventory">
 
@@ -65,7 +53,7 @@ class Inventory extends React.Component {
             <div id="accordion">
               {
                 this.state.inventoryList.map(family => {
-                  return <SpeciesFamily family={family} key={family[0]} handleSpeciesCheck={this.handleSpeciesCheck} />
+                  return <SpeciesFamily family={family} key={family[0]} savedInventory={this.state.savedInventory} />
                 })
               }
             </div>

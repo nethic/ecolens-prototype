@@ -1,6 +1,7 @@
 
-import React, { Component } from 'react';
-import "./authentication.css";
+import React from 'react';
+// import "./Authentication.css";
+// import logo from '../ecolens-logo-07.png';
 
 class Authentication extends React.Component {
 
@@ -81,6 +82,9 @@ class Authentication extends React.Component {
                 if (tokenRes.status !== 200) throw Error(tkbody.message);
 
                 return tkbody;
+
+            default:
+                break;
         }
     };
 
@@ -98,7 +102,7 @@ class Authentication extends React.Component {
             pass: this.state.pass
         })
 
-        
+
         this.callApi('/auth/login', data).then(res => {
             let token = res.token
             localStorage.setItem('tkkn', token);
@@ -121,7 +125,7 @@ class Authentication extends React.Component {
             pass: this.state.pass
         });
 
-        
+
         this.callApi('/auth/signup', data);
         event.preventDefault();
 
@@ -129,19 +133,31 @@ class Authentication extends React.Component {
 
     render() {
         return (
-            <form>
-                <p className="instructions">User Login</p>
-                <p className="App-intro">{this.state.response}</p>
-                <p className="App-intro">{this.state.authRes}</p>
-                <label>
-                    <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
+            <div>
+                <header className="App-header">
+                    {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                    <h1 className="App-title">EcoLens</h1>
+                    <h2 className="App-subtitle">Ecological field data collection.</h2>
+                </header>
+                <form>
+                    <p className="instructions">User Login</p>
+                    <p className="App-intro">{this.state.response}</p>
+                    <p className="App-intro">{this.state.authRes}</p>
+                    <label>
+                        <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
+                        <br />
+                        <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
+                    </label>
                     <br />
-                    <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
-                </label>
-                <br />
-                <input type="submit" value="Submit" onClick={this.handleSubmit} />
-                <input type="submit" value="Signup" onClick={this.handleSignup} />
-            </form>
+                    <input type="submit" value="Submit" onClick={this.handleSubmit} />
+                    <input type="submit" value="Signup" onClick={this.handleSignup} />
+                </form>
+                <footer className="footer">
+                    <div className="container">
+                        <span>Copyright ©EcoLens 2018 | Created by Ryan, Nodar, Leslie, Matthew </span>
+                    </div>
+                </footer>
+            </div>
         );
     }
 

@@ -19,14 +19,16 @@ module.exports = (app) => {
     });
 
     app.post('/flora/inventory/observation', (req, res) => {
-        db.floraInventory.upsert({
-            siteID: req.body.siteID,
-            studyYear: req.body.studyYear,
-            speciesID: req.body.speciesID
-        },
-        {
+        db.floraInventory.findOrCreate({
             where: {
-                recordID: req.body.recordID
+                siteID: req.body.siteID,
+                studyYear: req.body.studyYear,
+                speciesID: req.body.speciesID
+            },
+            defaults: {
+                siteID: req.body.siteID,
+                studyYear: req.body.studyYear,
+                speciesID: req.body.speciesID
             },
             include: [
                 { model: db.floraSpeciesList },
@@ -40,9 +42,9 @@ module.exports = (app) => {
     app.delete('/flora/inventory/correction', (req, res) => {
         db.floraInventory.destroy({
             where: {
-                siteID: req.body.sideID,
+                siteID: req.body.siteID,
                 studyYear: req.body.studyYear,
-                speciesID: req.body.SpeciesID
+                speciesID: req.body.speciesID
             }
         }).then( () => {
             res.end();

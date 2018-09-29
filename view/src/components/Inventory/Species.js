@@ -1,7 +1,40 @@
+
 import React from "react";
-import "./Inventory.css";
+import axios from "axios";
+// import "./Inventory.css";
 
 class Species extends React.Component {
+  state = {
+    isChecked: false,
+    siteID: 1,
+    studyYear: 2017
+  }
+
+  handleSpeciesCheck = event => {
+    this.setState({ isChecked: !this.state.isChecked });
+    let isChecked = event.target.checked;
+    let checkedSpeciesID = event.target.id;
+    switch (isChecked) {
+      case true:
+        axios.post('/flora/inventory/observation', {
+          siteID: this.state.siteID,
+          studyYear: this.state.studyYear,
+          speciesID: checkedSpeciesID
+        });
+        break;
+      case false:
+        axios.delete('/flora/inventory/correction', {
+          data: {
+            siteID: this.state.siteID,
+            studyYear: this.state.studyYear,
+            speciesID: checkedSpeciesID
+          }
+        });
+        break;
+      default:
+        break;
+    }
+  }
 
   render() {
     return (
@@ -13,7 +46,7 @@ class Species extends React.Component {
               <label className="form-check-label" htmlFor={this.props.species[1]}>{this.props.species[1]}</label>
             </div>
             <div className="col-1 py-3">
-              <input className="form-check-input" type="checkbox" value="" id={this.props.species[0]} onChange={this.props.handleSpeciesCheck} />
+              <input className="form-check-input" type="checkbox" checked={this.state.isChecked} id={this.props.species[0]} onChange={this.handleSpeciesCheck} />
             </div>
             <div className="col"></div>
           </div>
