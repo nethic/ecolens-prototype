@@ -27,6 +27,16 @@ module.exports = (app) => {
         });
     });
 
+    app.delete('/site/remove', (req, res) => {
+        db.studySites.destroy({
+            where: {
+                siteID: req.body.siteID
+            }
+        }).then(data => {
+            res.end();
+        });
+    });
+
     app.get('/years/view', (req, res) => {
         db.floraInventory.aggregate('studyYear', 'DISTINCT', { plain: false }).then(data =>  {
             res.send(data);
@@ -47,7 +57,7 @@ module.exports = (app) => {
 
     app.get('/site/years/view', (req, res) => {
         db.floraInventory.aggregate('studyYear', 'DISTINCT', {
-            where: { siteID: req.body.siteID },
+            where: { siteID: req.query.siteID },
             include: [
                 { model: db.studySites }
             ],
@@ -61,8 +71,8 @@ module.exports = (app) => {
         db.floraInventory.findAll({
             attributes: ['speciesID'],
             where: {
-                siteID: req.body.siteID,
-                studyYear: req.body.studyYear
+                siteID: req.query.siteID,
+                studyYear: req.query.studyYear
             }
         }).then(data => {
             res.send(data);
