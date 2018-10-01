@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import SpeciesFamily from "./SpeciesFamily.js";
+import Species from "./Species.js";
 import "./Inventory.css";
 
 class Inventory extends React.Component {
@@ -8,14 +9,59 @@ class Inventory extends React.Component {
   state = {
     siteID: 1,
     studyYear: 2017,
-    inventoryList: []
+    inventoryList: [],
+    speciesList:[],
+    found:[],
   }
 
   async componentDidMount() {
     await axios.get('/flora/inventory/list/retrieve').then(res => {
-      this.setState({ inventoryList: res.data });
+      let arr = res.data
+      let arrSorted = [];
+     
+      for (var i = 0; i < arr.length; i++) {
+        for (var x = 0; x < arr[i][2].length; x++) {
+          arrSorted.push(arr[i][2][x])
+        }
+
+      };
+      
+      
+
+
+      this.setState({ inventoryList: res.data, speciesList: arrSorted });
+
+
     });
   }
+
+
+  handleSearch = event =>{
+    
+      let val = event.target.value
+      let arr = this.state.speciesList
+      let found = [];
+      if(val.length>1){
+          for (var i = 0; i < arr.length; i++) {
+            if (arr[i][1].substr(0, val.length).toUpperCase() === val.toUpperCase()) {
+              found.push(arr[i])
+        }
+      }
+      this.setState({found: found})
+      event.preventDefault();
+    }
+      event.preventDefault();
+      
+  }
+
+  resetSearch(e) {
+    this.setState({found:[]});
+    e.preventDefault();
+  }
+
+
+
+
 
   handleSpeciesCheck = event => {
     let isChecked = event.target.checked;
@@ -41,35 +87,7 @@ class Inventory extends React.Component {
 
       <div className="container-fluid inventory">
 
-        <div className="alphabet">
-          <button className="letters">A</button>
-          <button className="letters">B</button>
-          <button className="letters">C</button>
-          <button className="letters">D</button>
-          <button className="letters">E</button>
-          <button className="letters">F</button>
-          <button className="letters">G</button>
-          <button className="letters">H</button>
-          <button className="letters">I</button>
-          <button className="letters">J</button>
-          <button className="letters">K</button>
-          <button className="letters">L</button>
-          <button className="letters">M</button>
-          <button className="letters">N</button>
-          <button className="letters">O</button>
-          <button className="letters">P</button>
-          <button className="letters">Q</button>
-          <button className="letters">R</button>
-          <button className="letters">S</button>
-          <button className="letters">T</button>
-          <button className="letters">U</button>
-          <button className="letters">V</button>
-          <button className="letters">W</button>
-          <button className="letters">X</button>
-          <button className="letters">Y</button>
-          <button className="letters">Z</button>
-
-        </div>
+     
 
 
         <div className="row m-5">
@@ -81,11 +99,12 @@ class Inventory extends React.Component {
         <div className="row m-5">
           <div className="col">
             <div className="input-group input-group-lg">
-              <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
+            <input type="text" id="myInput" value={this.state.value} className="form-control" onChange={this.handleSearch} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
+                
               <div className="input-group-prepend">
-                <span className="input-group-text text-white" id="inputGroup-sizing-lg">Search Flora</span>
+                <span className="input-group-text text-white" id="inputGroup-sizing-lg" onClick={this.resetSearch}>Search Flora</span>
               </div>
-              
+            
             </div>
           </div>
         </div>
@@ -93,6 +112,12 @@ class Inventory extends React.Component {
         <div className="row m-5">
           <div className="col">
             <div id="accordion">
+            {
+                  this.state.found.map(species => {
+                    
+                    return <Species species={species} key={species[0]} handleSpeciesCheck={this.handleSpeciesCheck} />
+                  })
+              }
               {
                 this.state.inventoryList.map(family => {
                   return <SpeciesFamily family={family} key={family[0]} handleSpeciesCheck={this.handleSpeciesCheck} />
