@@ -28,20 +28,21 @@ class Sites extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid mb-5">
+
                 <div className="row">
                     <div className="col">
-                        <form className="">
-                            <div className="form-group d-flex flex-row m-5">
-                                <input type="" className="form-control" id="newSite" aria-describedby="newSite" placeholder="Enter a new site name" value={this.state.value} onChange={this.handleSiteInput} />
+                        <form className="d-flex flex-column">
+                            <h2 className="mx-auto my-5">Study Sites</h2>
+                            <div className="form-group d-flex flex-row">
+                                <input type="text" className="form-control mx-1" id="newSite" aria-describedby="newSite" placeholder="New site name" value={this.state.value} onChange={this.handleSiteInput} />
                                 <button className="btn btn-success" onClick={this.handleAddSite}>Add Site</button>
                             </div>
-                            <div className="d-flex flex-column m-5">
-                                <h2 className="">Study Sites</h2>
+                            <div className="d-flex flex-column m-3">
                                 {
                                     this.state.siteList.map(site => {
-                                        return <Link to="/site" key={site.siteID} className="w-50">
-                                            <button className="btn btn-success my-2 w-100" id={site.siteID} key={site.siteID} onClick={this.props.handleSiteID}>{site.siteName}</button>
+                                        return <Link to="/site" key={site.siteID} className="mx-auto my-2 w-75">
+                                            <button className="btn btn-success w-100" id={site.siteID} key={site.siteID} onClick={this.props.handleSiteID}>{site.siteName}</button>
                                         </Link>
                                     })
                                 }
@@ -49,6 +50,7 @@ class Sites extends React.Component {
                         </form>
                     </div>
                 </div>
+
             </div>
         );
     }

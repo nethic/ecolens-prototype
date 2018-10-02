@@ -44,6 +44,7 @@ class App extends Component {
         studyYear: this.state.studyYear
       }
     }).then(res => {
+      this.setState({ savedInventory: {} });
       res.data.forEach(record => {
         this.setState(prevState => ({
           savedInventory: {
@@ -60,18 +61,16 @@ class App extends Component {
       <Router>
         <div className="App">
           {this.state.isAuth && <Navbar handleLogout={this.handleLogout} />}
-          <div className="container-fluid">
-            {!this.state.isAuth && <Route path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
-            {
-              this.state.isAuth &&
-              <div>
-                <Route exact path="/" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
-                <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
-                <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} savedInventory={this.state.savedInventory} />} />
-              </div>
-            }
-          </div>
-          <footer className="footer">Copyright © 2018 EcoLens | Developed by Dirty Hippies</footer>
+          {!this.state.isAuth && <Route path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
+          {
+            this.state.isAuth &&
+            <div>
+              <Route exact path="/" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
+              <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
+              <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} savedInventory={this.state.savedInventory} />} />
+            </div>
+          }
+          <footer className="footer fixed-bottom bg bg-dark text-center text-muted p-3 m-auto">Copyright © 2018 EcoLens | By Dirty Hippies</footer>
         </div>
       </Router>
     )

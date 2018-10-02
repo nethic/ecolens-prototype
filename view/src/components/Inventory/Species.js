@@ -1,6 +1,7 @@
 
 import React from "react";
 import axios from "axios";
+import "./Species.css";
 // import "./Inventory.css";
 
 class Species extends React.Component {
@@ -42,20 +43,10 @@ class Species extends React.Component {
 
   render() {
     return (
-      <div className="form-check">
-        <form>
-          <div className="form-row">
-            <div className="col"></div>
-            <div className="col-lg-8 col-md-8 col-sm-4 py-2">
-              <label className="form-check-label" htmlFor={this.props.species[1]}>{this.props.species[1]}</label>
-            </div>
-            <div className="col-1 py-3">
-              <input className="form-check-input" type="checkbox" checked={this.state.isChecked} id={this.props.species[0]} onChange={this.handleSpeciesCheck} />
-            </div>
-            <div className="col"></div>
-          </div>
-        </form>
-      </div>
+        <label className="checkbox-container">{this.props.species[1]}
+          <input type="checkbox" checked={this.state.isChecked} id={this.props.species[0]} onChange={this.handleSpeciesCheck} />
+          <span className="checkmark"></span>
+        </label>
     );
   }
 }

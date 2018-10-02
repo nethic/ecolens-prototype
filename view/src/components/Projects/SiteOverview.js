@@ -40,20 +40,21 @@ class SiteOverview extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid mb-5">
+
                 <div className="row">
                     <div className="col">
-                        <form className="">
-                            <div className="form-group d-flex flex-row m-5">
-                                <input type="" className="form-control" id="newYear" aria-describedby="newYear" placeholder="Enter a new study year" value={this.state.value} onChange={this.handleYearInput} />
+                        <form className="d-flex flex-column">
+                            <h2 className="mx-auto my-5">Study Years</h2>
+                            <div className="form-group d-flex flex-row">
+                                <input type="text" className="form-control mx-1" id="newYear" aria-describedby="newYear" placeholder="New study year" value={this.state.value} onChange={this.handleYearInput} />
                                 <button className="btn btn-success" onClick={this.handleAddYear}>Add Year</button>
                             </div>
-                            <div className="d-flex flex-column m-5">
-                                <h2 className="">Study Years</h2>
+                            <div className="d-flex flex-column m-3">
                                 {
                                     this.state.yearList.map(year => {
-                                        return <Link to="/inventory" key={this.props.siteID + "-" + year} className="w-50">
-                                            <button className="btn btn-success my-2 w-100" id={year} key={year} onClick={this.props.loadInventory}>{year}</button>
+                                        return <Link to="/inventory" key={this.props.siteID + "-" + year} className="mx-auto my-2 w-75">
+                                            <button className="btn btn-success w-100" id={year} key={year} onClick={this.props.loadInventory}>{year}</button>
                                         </Link>
                                     })
                                 }
@@ -61,6 +62,7 @@ class SiteOverview extends React.Component {
                         </form>
                     </div>
                 </div>
+
             </div>
         );
     }
