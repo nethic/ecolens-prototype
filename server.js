@@ -12,7 +12,7 @@ app.use(bparse.text());
 app.use(bparse.json());
 
 
-require('./controller/authController')(app, crypt,db);
+require('./controller/authController')(app, crypt, db);
 
 require('./controller/projectsController')(app);
 require('./controller/floraInventoryController')(app);
