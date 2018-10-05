@@ -61,12 +61,12 @@ class App extends Component {
       <Router>
         <div className="App">
           {this.state.isAuth && <Navbar handleLogout={this.handleLogout} />}
-          {!this.state.isAuth && <Route path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
+          {!this.state.isAuth && <Route path="/home" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
           {
             this.state.isAuth &&
             <div>
-              <Route exact path="/" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
-              <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
+              <Route exact path="/home" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
+              <Route exact path="/site-overview" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
               <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} savedInventory={this.state.savedInventory} />} />
             </div>
           }

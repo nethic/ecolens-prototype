@@ -13,8 +13,8 @@ class Navbar extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-item nav-link active" to="/">Home</Link>
-            <Link className="nav-item nav-link" to="/" onClick={this.props.handleLogout}>Logout</Link>
+            <Link className="nav-item nav-link active" to="/home">Home</Link>
+            <Link className="nav-item nav-link" to="/home" onClick={this.props.handleLogout}>Logout</Link>
           </div>
         </div>
       </nav>
