@@ -11,9 +11,18 @@ app.use(bparse.urlencoded({ extended: true }));
 app.use(bparse.text());
 app.use(bparse.json());
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 
+// Default route to serve React index
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
+// Authentication
 require('./controller/authController')(app, crypt, db);
 
+// Content
 require('./controller/projectsController')(app);
 require('./controller/floraInventoryController')(app);
 
@@ -27,6 +36,6 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync(syncOptions).then(function() {
+db.sequelize.sync(syncOptions).then(function () {
     app.listen(port, () => console.log(`Listening on port ${port}.`));
 });
