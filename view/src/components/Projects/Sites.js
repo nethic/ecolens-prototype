@@ -12,6 +12,7 @@ class Sites extends React.Component {
 
     componentWillMount() {
         axios.get('/sites/view').then(res => {
+            console.log(res);
             this.setState({ siteList: res.data });
         });
     }
