@@ -39,7 +39,7 @@ class Sites extends React.Component {
                                 <button className="btn btn-success" onClick={this.handleAddSite}>Add Site</button>
                             </div>
                             <div className="d-flex flex-column m-3">
-                                {
+                                {Array.isArray(this.state.siteList) &&
                                     this.state.siteList.map(site => {
                                         return <Link to="/site" key={site.siteID} className="mx-auto my-2 w-75">
                                             <button className="btn btn-success w-100" id={site.siteID} key={site.siteID} onClick={this.props.handleSiteID}>{site.siteName}</button>
