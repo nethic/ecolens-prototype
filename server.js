@@ -15,17 +15,17 @@ app.use(bparse.json());
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'view/build')));
 
-// Default route to serve React index
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/view/build/index.html'));
-});
-
 // Authentication
 require('./controller/authController')(app, crypt, db);
 
 // Content
 require('./controller/projectsController')(app);
 require('./controller/floraInventoryController')(app);
+
+// Default route to serve React index
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/view/build/index.html'));
+});
 
 
 let syncOptions = { force: false };
