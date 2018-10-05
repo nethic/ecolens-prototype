@@ -13,7 +13,7 @@ app.use(bparse.json());
 
 // Default route to serve React index
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+    res.sendFile(path.join(__dirname + '/view/build/index.html'));
 });
 
 // Authentication
