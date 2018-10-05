@@ -10,8 +10,8 @@ class Sites extends React.Component {
         siteToAdd: ''
     }
 
-    async componentDidMount() {
-        await axios.get('/sites/view').then(res => {
+    componentWillMount() {
+        axios.get('/sites/view').then(res => {
             this.setState({ siteList: res.data });
         });
     }

@@ -5,7 +5,7 @@ module.exports = (app) => {
 
     app.get('/sites/view', (req, res) => {
         db.studySites.findAll().then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -39,7 +39,7 @@ module.exports = (app) => {
 
     app.get('/years/view', (req, res) => {
         db.floraInventory.aggregate('studyYear', 'DISTINCT', { plain: false }).then(data =>  {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -51,7 +51,7 @@ module.exports = (app) => {
             ],
             plain: false
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -63,7 +63,7 @@ module.exports = (app) => {
             ],
             plain: false
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -75,7 +75,7 @@ module.exports = (app) => {
                 studyYear: req.query.studyYear
             }
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 

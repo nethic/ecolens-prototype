@@ -15,7 +15,7 @@ module.exports = (app) => {
                 listArr[species.familyID-1][2].push([species.speciesID, species.speciesName]);
             });
         });
-        res.send(listArr);
+        res.json(listArr);
     });
 
     app.post('/flora/inventory/observation', (req, res) => {
@@ -35,7 +35,7 @@ module.exports = (app) => {
                 { model: db.studySites }
             ]
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -100,7 +100,7 @@ module.exports = (app) => {
                 familyID: req.body.familyID
             }
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
 
@@ -113,7 +113,7 @@ module.exports = (app) => {
                 speciesID: req.body.speciesID
             }
         }).then(data => {
-            res.send(data);
+            res.json(data);
         });
     });
     
