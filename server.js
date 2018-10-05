@@ -1,5 +1,6 @@
 
 require('dotenv').config();
+const path = require('path');
 const port = process.env.PORT || 3001;
 const crypt = require('argon2');
 const db = require('./model');
@@ -10,6 +11,9 @@ const app = express();
 app.use(bparse.urlencoded({ extended: true }));
 app.use(bparse.text());
 app.use(bparse.json());
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'view/build')));
 
 // Default route to serve React index
 app.get('*', (req, res) => {
