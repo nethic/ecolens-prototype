@@ -15,20 +15,20 @@ class Species extends React.Component {
     }
   }
 
-  handleSpeciesCheck = event => {
+  handleSpeciesCheck = async event => {
     this.setState({ isChecked: !this.state.isChecked });
     let isChecked = event.target.checked;
     let checkedSpeciesID = event.target.id;
     switch (isChecked) {
       case true:
-        axios.post('/flora/inventory/observation', {
+        await axios.post('/flora/inventory/observation', {
           siteID: this.props.siteID,
           studyYear: this.props.studyYear,
           speciesID: checkedSpeciesID
         });
         break;
       case false:
-        axios.delete('/flora/inventory/correction', {
+        await axios.delete('/flora/inventory/correction', {
           data: {
             siteID: this.props.siteID,
             studyYear: this.props.studyYear,
@@ -39,6 +39,7 @@ class Species extends React.Component {
       default:
         break;
     }
+    this.props.handleInventoryStats();
   }
 
   render() {

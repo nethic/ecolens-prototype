@@ -1,4 +1,5 @@
 
+const sequelize = require('sequelize');
 const db = require('../model');
 
 module.exports = (app) => {
@@ -12,7 +13,7 @@ module.exports = (app) => {
         });
         await db.floraSpeciesList.findAll().then(data => {
             data.forEach(species => {
-                listArr[species.familyID-1][2].push([species.speciesID, species.speciesName]);
+                listArr[species.familyID - 1][2].push([species.speciesID, species.speciesName]);
             });
         });
         res.json(listArr);
@@ -46,7 +47,7 @@ module.exports = (app) => {
                 studyYear: req.body.studyYear,
                 speciesID: req.body.speciesID
             }
-        }).then( () => {
+        }).then(() => {
             res.end();
         });
     });
@@ -87,7 +88,7 @@ module.exports = (app) => {
             }
             else {
                 res.send('Species already exists.');
-            }        
+            }
         });
     });
 
@@ -95,26 +96,50 @@ module.exports = (app) => {
         db.floraFamilyList.update({
             familyName: req.body.familyName
         },
-        {
-            where: {
-                familyID: req.body.familyID
-            }
-        }).then(data => {
-            res.json(data);
-        });
+            {
+                where: {
+                    familyID: req.body.familyID
+                }
+            }).then(data => {
+                res.json(data);
+            });
     });
 
     app.put('/flora/inventory/list/edit-species', (req, res) => {
         db.floraSpeciesList.update({
             speciesName: req.body.speciesName
         },
-        {
-            where: {
-                speciesID: req.body.speciesID
-            }
-        }).then(data => {
-            res.json(data);
-        });
+            {
+                where: {
+                    speciesID: req.body.speciesID
+                }
+            }).then(data => {
+                res.json(data);
+            });
     });
-    
+
+    app.get('/site/year/stats', async (req, res) => {
+        const ranksList = ['L+', 'L5', 'L4', 'L3', 'L2', 'L1'];
+        let rankCounts = {};
+        asyncForEach = async (array, callback) => {
+            for (let index = 0; index < array.length; index++) {
+                await callback(array[index], index, array)
+            }
+        }
+        await asyncForEach(ranksList, async rank => {
+            await db.floraInventory.count({
+                where: {
+                    siteID: req.query.siteID,
+                    studyYear: req.query.studyYear
+                },
+                include: [
+                    { model: db.floraSpeciesList, where: { speciesRank: rank }}
+                ]
+            }).then(rankCount => {
+                rankCounts[rank] = rankCount;
+            });
+        });
+        res.json(rankCounts);
+    });
+
 }

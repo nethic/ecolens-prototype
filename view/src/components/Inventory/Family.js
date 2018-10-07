@@ -14,11 +14,11 @@ class SpeciesFamily extends React.Component {
           </button>
         </div>
 
-        <div id={this.props.family[1]} className="collapse hide" aria-labelledby={this.props.family[1] + "heading"} data-parent="#accordion">
+        <div id={this.props.family[1]} className="collapse hide" aria-labelledby={this.props.family[1] + "heading"} data-parent="#accordion2">
           <div className="card-body d-flex flex-column">
             {
               this.props.family[2].map(species => {
-                return <Species species={species} key={species[0]} savedInventory={this.props.savedInventory} siteID={this.props.siteID} studyYear={this.props.studyYear} />
+                return <Species species={species} key={species[0]} savedInventory={this.props.savedInventory} siteID={this.props.siteID} studyYear={this.props.studyYear} handleInventoryStats={this.props.handleInventoryStats} />
               })
             }
           </div>

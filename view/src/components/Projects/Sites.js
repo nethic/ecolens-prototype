@@ -10,7 +10,7 @@ class Sites extends React.Component {
         siteToAdd: ''
     }
 
-    componentWillMount() {
+    componentDidMount() {
         axios.get('/sites/view').then(res => {
             this.setState({ siteList: res.data });
         });
@@ -33,7 +33,7 @@ class Sites extends React.Component {
                 <div className="row">
                     <div className="col">
                         <form className="d-flex flex-column">
-                            <h2 className="mx-auto my-5">Study Sites</h2>
+                            <h2 className="mx-auto my-4">Study Sites</h2>
                             <div className="form-group d-flex flex-row">
                                 <input type="text" className="form-control mx-1" id="newSite" aria-describedby="newSite" placeholder="New site name" value={this.state.value} onChange={this.handleSiteInput} />
                                 <button className="btn btn-success" onClick={this.handleAddSite}>Add Site</button>
