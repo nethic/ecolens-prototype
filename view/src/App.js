@@ -13,8 +13,8 @@ class App extends Component {
 
   state = {
     isAuth: false,
-    siteID: 1,
-    studyYear: 2017,
+    siteID: -1,
+    studyYear: -1,
     savedInventory: {}
   };
 

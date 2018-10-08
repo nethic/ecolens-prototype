@@ -18,7 +18,7 @@ class SpeciesFamily extends React.Component {
           <div className="card-body d-flex flex-column">
             {
               this.props.family[2].map(species => {
-                return <Species species={species} key={species[0]} savedInventory={this.props.savedInventory} siteID={this.props.siteID} studyYear={this.props.studyYear} handleInventoryStats={this.props.handleInventoryStats} />
+                return <Species species={species} key={species[0]} siteID={this.props.siteID} studyYear={this.props.studyYear} handleInventoryStats={this.props.handleInventoryStats} isChecked={this.props.isChecked[species[0]]} handleSpeciesCheck={this.props.handleSpeciesCheck} />
               })
             }
           </div>
