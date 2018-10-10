@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import "./authentication.css";
 
+
 class Authentication extends React.Component {
 
     constructor(props) {
@@ -134,7 +135,8 @@ class Authentication extends React.Component {
                 <p className="App-intro">{this.state.response}</p>
                 <p className="App-intro">{this.state.authRes}</p>
                 <label id="authenlogin">
-                    <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
+                    <input id="user" type='text' value={this.state.value} onChange={this.handleUser}
+                     placeholder="username" />
                     <br />
                     <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
                 </label>

@@ -81,15 +81,15 @@
 
 .accordion-toggle:after {
     /* symbol for "opened" panels */
-    font-family: 'Glyphicons Halflings';  
-    content:"\E113";   
+    font-family: 'Glyphicon Halflings';  
+    content:"\E112";   
     float: left;        
     color: lightgrey;        
     overflow: no-display;
 }
 .card-header .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content:"\E114";
+    content:"\E113";
 }
 
 input[type=checkbox]:checked {
@@ -133,14 +133,18 @@ input[type=checkbox]:checked:after {
 
 
 @media only screen and (max-width: 600px) {
+
     .container-fluid {
         width: 75%;
         top: 80px;
     }
     
-    
     .input-group-text {
         margin-top: 10px;
+    }
+
+    #accordion {
+        width: 95%;
     }
     
 }

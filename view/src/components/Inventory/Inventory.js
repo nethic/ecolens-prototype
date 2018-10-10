@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import SpeciesFamily from "./SpeciesFamily.js";
 import "./Inventory.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Inventory extends React.Component {
 

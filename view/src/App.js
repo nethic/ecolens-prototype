@@ -8,6 +8,7 @@ import Authentication from './components/authentication.js';
 import Inventory from './components/Inventory/Inventory.js';
 import Navbar from './components/Navbar/Navbar.js';
 
+
 class App extends Component {
 
   state = {
@@ -42,7 +43,7 @@ class App extends Component {
         </Router>
         <footer className="footer">
           <div className="container">
-            <p className="alignLeft">Copyright ©Ecolens 2018</p>
+            <p className="alignLeft">Copyright ©EcoLens 2018</p>
           </div>
         </footer>
       </div>
