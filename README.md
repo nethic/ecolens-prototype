@@ -45,27 +45,27 @@ The primary technologies used to develop EcoLens are MySQL, Express, React, and 
 
 Initially, you will be met with an authentication page where you can either sign in or, if you don't yet have an account, sign up.
 
-![Authentication](public/images/authentication.jpg)
+![Authentication](view/public/images/authentication.jpg)
 
 After signing in, the home page will display a list of study sites that have saved data, as well as an option to add a new site name.
 
-![Site Selection](public/images/sites.jpg)
+![Site Selection](view/public/images/sites.jpg)
 
 Upon selecting a study site, you will be taken to a page listing all associated study years with saved data, as well as an option to add a new study year.
 
-![Site Overview](public/images/site-overview.jpg)
+![Site Overview](view/public/images/site-overview.jpg)
 
 Upon selecting a study year, you will be taken to the associated Flora Inventory page. If you previously entered data for a given site-year, it will be loaded and show the correct status for all species checkboxes.
 
-![Inventory Form](public/images/inventory.jpg)
+![Inventory Form](view/public/images/inventory.jpg)
 
 The primary method of recording species is intended to be through the search bar near the top of the page. You can easily search for flora by starting to type and, after four characters, a dropdown list of matching species will appear with adjacent checkboxes. Checking or unchecking these boxes indicates the presence or absence of species at the given study site in that year and will immediately store the record in the database. When you're done with your search, simply click the "Clear" button to reset the search results. 
 
-![Flora Search](public/images/search.jpg)
+![Flora Search](view/public/images/search.jpg)
 
 Below the search bar, you will find a complete list of flora families currently found in the Toronto region. Clicking on a family will expand its container to show a list of all associated species found in the Toronto region. Again, there are adjacent checkboxes that function exactly the same as in the search dropdown, and which share the same checkbox status.
 
-![Expandable Family/Species List](public/images/species-list.jpg)
+![Expandable Family/Species List](view/public/images/species-list.jpg)
 
 Once you have collected some data, you can check the "Species Richness" section to see live counts of species by local occurrence rank:
     L+ represents non-native species
@@ -73,7 +73,7 @@ Once you have collected some data, you can check the "Species Richness" section 
     ...
     L1 represents the rarest native species
 
-![Species Richness](public/images/species-richness.jpg)
+![Species Richness](view/public/images/species-richness.jpg)
 
 ## Contribution and Help
 
