@@ -148,7 +148,7 @@ class Inventory extends React.Component {
               <input type="text" className="form-control mx-1" id="myInput" value={this.state.value} aria-describedby="" placeholder="Search flora by scientific name" onChange={this.handleSearch} />
               <button className="btn btn-success" onClick={this.resetSearch}>Clear</button>
             </div>
-            <div>
+            <div className="mx-3">
               {
                 this.state.found.map(species => {
                   return <Species species={species} key={species[0]} handleSpeciesCheck={this.handleSpeciesCheck} isChecked={this.state.isCheckedObj[species[0]]} />
