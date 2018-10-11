@@ -1,6 +1,7 @@
 
-import React, { Component } from 'react';
-import "./authentication.css";
+import React from 'react';
+// import "./Authentication.css";
+// import logo from '../ecolens-logo-07.png';
 
 class Authentication extends React.Component {
 
@@ -81,6 +82,9 @@ class Authentication extends React.Component {
                 if (tokenRes.status !== 200) throw Error(tkbody.message);
 
                 return tkbody;
+
+            default:
+                break;
         }
     };
 
@@ -98,7 +102,7 @@ class Authentication extends React.Component {
             pass: this.state.pass
         })
 
-        
+
         this.callApi('/auth/login', data).then(res => {
             let token = res.token
             localStorage.setItem('tkkn', token);
@@ -121,7 +125,7 @@ class Authentication extends React.Component {
             pass: this.state.pass
         });
 
-        
+
         this.callApi('/auth/signup', data);
         event.preventDefault();
 
@@ -129,19 +133,33 @@ class Authentication extends React.Component {
 
     render() {
         return (
-            <form id="authenform">
-                <p className="instructions">User Login</p>
-                <p className="App-intro">{this.state.response}</p>
-                <p className="App-intro">{this.state.authRes}</p>
-                <label id="authenlogin">
-                    <input id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="username" />
-                    <br />
-                    <input id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="password" />
-                </label>
-                <br />
-                <input id="submit" type="submit" value="Submit" onClick={this.handleSubmit} />
-                <input id="signup" type="submit" value="Signup" onClick={this.handleSignup} />
-            </form>
+            <div className="container-fluid">
+
+                <div className="row">
+                    <div className="col">
+                        <header className="App-header d-flex flex-column my-5 text-dark">
+                            {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                            <h1 className="App-title mx-auto">EcoLens</h1>
+                            <h2 className="App-subtitle mx-auto my-3">ecological data collection</h2>
+                        </header>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col d-flex">
+                        <form className="d-flex flex-column mx-auto bg bg-dark p-4 rounded">
+                            <label className="m-0">
+                                <input className="form-control mb-4" id="user" type='text' value={this.state.value} onChange={this.handleUser} placeholder="Username" />
+                                <input className="form-control mb-4" id="pass" type='password' value={this.state.value} onChange={this.handlePass} placeholder="Password" />
+                            </label>
+                            <div className="d-flex flex-row">
+                                <input className="btn btn-success ml-auto mr-4 w-50" type="submit" value="Login" onClick={this.handleSubmit} />
+                                <input className="btn btn-success mr-auto w-50" type="submit" value="Signup" onClick={this.handleSignup} />
+                            </div>
+                        </form>
+                    </div>
+                </div >
+
+            </div >
         );
     }
 
