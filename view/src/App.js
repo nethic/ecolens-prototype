@@ -1,37 +1,79 @@
+
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from "axios";
+// import './App.css';
+import Authentication from './components/authentication.js';
+import Sites from './components/Projects/Sites.js';
+import SiteOverview from './components/Projects/SiteOverview';
+import Inventory from './components/Inventory/Inventory.js';
+import Navbar from './components/Navbar/Navbar.js';
 
 class App extends Component {
+
   state = {
-    response: ''
+    isAuth: false,
+    siteID: -1,
+    studyYear: -1,
+    savedInventory: {}
   };
 
-  componentDidMount() {
-    this.callApi()
-      .then(res => this.setState({ response: res.express }))
-      .catch(err => console.log(err));
+  checkAuth = (status) => {
+    this.setState({ isAuth: status });
   }
 
-  callApi = async () => {
-    const response = await fetch('/test');
-    const body = await response.json();
+  handleLogout = () => {
+    localStorage.removeItem("tkkn");
+    this.setState({ isAuth: false });
+    this.forceUpdate();
+  }
 
-    if (response.status !== 200) throw Error(body.message);
+  handleSiteID = (event) => {
+    this.setState({ siteID: event.target.id });
+  }
 
-    return body;
-  };
-  
+  handleStudyYear = (event) => {
+    this.setState({ studyYear: event.target.id });
+  }
+
+  loadInventory = async (event) => {
+    await this.handleStudyYear(event);
+    await axios.get('/site/year/load', {
+      params: {
+        siteID: this.state.siteID,
+        studyYear: this.state.studyYear
+      }
+    }).then(res => {
+      this.setState({ savedInventory: {} });
+      res.data.forEach(record => {
+        this.setState(prevState => ({
+          savedInventory: {
+            ...prevState.savedInventory,
+            [record.speciesID]: true
+          }
+        }));
+      });
+    });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{this.state.response}</p>
-      </div>
-    );
+      <Router>
+        <div className="App">
+          {this.state.isAuth && <Navbar handleLogout={this.handleLogout} />}
+          {!this.state.isAuth && <Route path="/" render={(props) => <Authentication {...props} checkAuth={this.checkAuth} />} />}
+          {
+            this.state.isAuth &&
+            <div>
+              <Route exact path="/" render={(props) => <Sites {...props} handleSiteID={this.handleSiteID} />} />
+              <Route exact path="/site" render={(props) => <SiteOverview {...props} siteID={this.state.siteID} handleStudyYear={this.handleStudyYear} loadInventory={this.loadInventory} />} />
+              <Route path="/inventory" render={(props) => <Inventory {...props} siteID={this.state.siteID} studyYear={this.state.studyYear} savedInventory={this.state.savedInventory} />} />
+            </div>
+          }
+          <footer className="footer fixed-bottom bg bg-dark text-center text-muted p-3 m-auto">Copyright © 2018 EcoLens | By Dirty Hippies</footer>
+        </div>
+      </Router>
+    )
   }
 }
 

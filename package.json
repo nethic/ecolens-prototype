@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "heroku-postbuild": "cd view && yarn && yarn run build",
     "view": "cd view && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn view\""
@@ -14,9 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.19.3",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mysql2": "^1.6.1",
     "sequelize": "^4.38.0"
   },

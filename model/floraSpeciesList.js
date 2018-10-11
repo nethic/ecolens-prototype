@@ -1,22 +1,22 @@
 
 module.exports = function(sequelize, DataTypes) {
-    var speciesList = sequelize.define("speciesList", {
+    var floraSpeciesList = sequelize.define("floraSpeciesList", {
       speciesID: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
-        autoincrement: true
+        autoIncrement: true
       },
       speciesName: {
         type: DataTypes.STRING,
-        allowNull: false
-      },
-      speciesPresence: {
-        type: DataTypes.BOOLEAN,
         allowNull: false,
-        defaultValue: false
+        unique: true
+      },
+      speciesRank: {
+        type: DataTypes.STRING,
+        allowNull: true
       }
     });
-    return speciesList;
+    return floraSpeciesList;
   };
   
